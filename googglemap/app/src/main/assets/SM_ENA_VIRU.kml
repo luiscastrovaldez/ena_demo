@@ -1,0 +1,5330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml >
+<Document id="SM_ENA_VIRU">
+	<name>SM_ENA_VIRU</name>
+	<Snippet maxLines="0"></Snippet>
+	<Style id="PolyStyle00">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ff6e6e6e</color>
+			<width>0.4</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffe0fcc0</color>
+		</PolyStyle>
+	</Style>
+	<Folder id="FeatureLayer0">
+		<name>SM_ENA_VIRU</name>
+		<Snippet maxLines="0"></Snippet>
+		<placemarks>
+		<Placemark id="ID_00000">
+			<name>13</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>13</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>OBJECTID_1</td>
+
+<td>53</td>
+
+</tr>
+
+<tr>
+
+<td>IDDPTO</td>
+
+<td>13</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>IDPROV</td>
+
+<td>1312</td>
+
+</tr>
+
+<tr>
+
+<td>IDDIST</td>
+
+<td>131201</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>REG_NAT</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>PISO_ECO</td>
+
+<td>1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SEGMENTO</td>
+
+<td>00561373</td>
+
+</tr>
+
+<tr>
+
+<td>SEGMENT</td>
+
+<td>00561373</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO</td>
+
+<td>102</td>
+
+</tr>
+
+<tr>
+
+<td>TIPO_GRILL</td>
+
+<td>2</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>GEOCODIGO</td>
+
+<td>131201110056137301022</td>
+
+</tr>
+
+<tr>
+
+<td>transit</td>
+
+<td>561373</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO_MA</td>
+
+<td>100</td>
+
+</tr>
+
+<tr>
+
+<td>area_segme</td>
+
+<td>4</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SERPENTIN</td>
+
+<td>308752</td>
+
+</tr>
+
+<tr>
+
+<td>DOMINIO</td>
+
+<td>1211002</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>id_pre</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>800</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>MUESTRA</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Le_1</td>
+
+<td>800</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-78.75673984879127,-8.401155430131279,0 -78.75492706024009,-8.40117274402605,0 -78.75490967932581,-8.399367577671479,0 -78.75672245953405,-8.399350267548689,0 -78.75673984879127,-8.401155430131279,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark id="ID_00001">
+			<name>13</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>13</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>OBJECTID_1</td>
+
+<td>49</td>
+
+</tr>
+
+<tr>
+
+<td>IDDPTO</td>
+
+<td>13</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>IDPROV</td>
+
+<td>1312</td>
+
+</tr>
+
+<tr>
+
+<td>IDDIST</td>
+
+<td>131201</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>REG_NAT</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>PISO_ECO</td>
+
+<td>1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SEGMENTO</td>
+
+<td>00568813</td>
+
+</tr>
+
+<tr>
+
+<td>SEGMENT</td>
+
+<td>00568813</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO</td>
+
+<td>102</td>
+
+</tr>
+
+<tr>
+
+<td>TIPO_GRILL</td>
+
+<td>2</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>GEOCODIGO</td>
+
+<td>131201110056881301022</td>
+
+</tr>
+
+<tr>
+
+<td>transit</td>
+
+<td>568813</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO_MA</td>
+
+<td>100</td>
+
+</tr>
+
+<tr>
+
+<td>area_segme</td>
+
+<td>4</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SERPENTIN</td>
+
+<td>311764</td>
+
+</tr>
+
+<tr>
+
+<td>DOMINIO</td>
+
+<td>1211002</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>id_pre</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>800</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>MUESTRA</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Le_1</td>
+
+<td>800</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-78.86572396838766,-8.422663037900234,0 -78.86571499816165,-8.421760572719236,0 -78.8675276473913,-8.421742705511376,0 -78.86754559720082,-8.423547631939712,0 -78.8657329396095,-8.423565503030375,0 -78.86572396838766,-8.422663037900234,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark id="ID_00002">
+			<name>13</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>13</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>2</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>OBJECTID_1</td>
+
+<td>22</td>
+
+</tr>
+
+<tr>
+
+<td>IDDPTO</td>
+
+<td>13</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>IDPROV</td>
+
+<td>1312</td>
+
+</tr>
+
+<tr>
+
+<td>IDDIST</td>
+
+<td>131201</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>REG_NAT</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>PISO_ECO</td>
+
+<td>1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SEGMENTO</td>
+
+<td>02252821</td>
+
+</tr>
+
+<tr>
+
+<td>SEGMENT</td>
+
+<td>02252821</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO</td>
+
+<td>201</td>
+
+</tr>
+
+<tr>
+
+<td>TIPO_GRILL</td>
+
+<td>1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>GEOCODIGO</td>
+
+<td>131201110225282102011</td>
+
+</tr>
+
+<tr>
+
+<td>transit</td>
+
+<td>2252821</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO_MA</td>
+
+<td>200</td>
+
+</tr>
+
+<tr>
+
+<td>area_segme</td>
+
+<td>1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SERPENTIN</td>
+
+<td>310146</td>
+
+</tr>
+
+<tr>
+
+<td>DOMINIO</td>
+
+<td>1212001</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>id_pre</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>400</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>MUESTRA</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Le_1</td>
+
+<td>400</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-78.88555480794764,-8.411636690626509,0 -78.88464852677588,-8.411645656170236,0 -78.88463952466331,-8.410743210808095,0 -78.8855458037478,-8.410734246239649,0 -78.88555480794764,-8.411636690626509,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark id="ID_00003">
+			<name>13</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>13</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>3</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>OBJECTID_1</td>
+
+<td>61</td>
+
+</tr>
+
+<tr>
+
+<td>IDDPTO</td>
+
+<td>13</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>IDPROV</td>
+
+<td>1312</td>
+
+</tr>
+
+<tr>
+
+<td>IDDIST</td>
+
+<td>131201</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>REG_NAT</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>PISO_ECO</td>
+
+<td>1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SEGMENTO</td>
+
+<td>00146737</td>
+
+</tr>
+
+<tr>
+
+<td>SEGMENT</td>
+
+<td>00146737</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO</td>
+
+<td>102</td>
+
+</tr>
+
+<tr>
+
+<td>TIPO_GRILL</td>
+
+<td>3</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>GEOCODIGO</td>
+
+<td>131201110014673701023</td>
+
+</tr>
+
+<tr>
+
+<td>transit</td>
+
+<td>146737</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO_MA</td>
+
+<td>100</td>
+
+</tr>
+
+<tr>
+
+<td>area_segme</td>
+
+<td>16</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SERPENTIN</td>
+
+<td>317951</td>
+
+</tr>
+
+<tr>
+
+<td>DOMINIO</td>
+
+<td>1211003</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>id_pre</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>1600</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>MUESTRA</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Le_1</td>
+
+<td>1600</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-78.89339353082308,-8.470223159441909,0 -78.88976788750891,-8.470259329656631,0 -78.88973158278651,-8.466649580694821,0 -78.89335719246962,-8.466613426112538,0 -78.89339353082308,-8.470223159441909,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark id="ID_00004">
+			<name>13</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>13</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>4</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>OBJECTID_1</td>
+
+<td>20</td>
+
+</tr>
+
+<tr>
+
+<td>IDDPTO</td>
+
+<td>13</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>IDPROV</td>
+
+<td>1312</td>
+
+</tr>
+
+<tr>
+
+<td>IDDIST</td>
+
+<td>131202</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>REG_NAT</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>PISO_ECO</td>
+
+<td>9</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SEGMENTO</td>
+
+<td>02346099</td>
+
+</tr>
+
+<tr>
+
+<td>SEGMENT</td>
+
+<td>02346099</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO</td>
+
+<td>102</td>
+
+</tr>
+
+<tr>
+
+<td>TIPO_GRILL</td>
+
+<td>1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>GEOCODIGO</td>
+
+<td>131202190234609901021</td>
+
+</tr>
+
+<tr>
+
+<td>transit</td>
+
+<td>2346099</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO_MA</td>
+
+<td>100</td>
+
+</tr>
+
+<tr>
+
+<td>area_segme</td>
+
+<td>1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SERPENTIN</td>
+
+<td>320036</td>
+
+</tr>
+
+<tr>
+
+<td>DOMINIO</td>
+
+<td>1291001</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>id_pre</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>400</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>MUESTRA</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Le_1</td>
+
+<td>400</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-78.45292623691135,-8.492430064284338,0 -78.45201932522977,-8.492438108665565,0 -78.45201124643786,-8.491535227200931,0 -78.45291815600729,-8.491527183687108,0 -78.45292623691135,-8.492430064284338,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark id="ID_00005">
+			<name>13</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>13</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>5</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>OBJECTID_1</td>
+
+<td>60</td>
+
+</tr>
+
+<tr>
+
+<td>IDDPTO</td>
+
+<td>13</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>IDPROV</td>
+
+<td>1312</td>
+
+</tr>
+
+<tr>
+
+<td>IDDIST</td>
+
+<td>131203</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>REG_NAT</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>PISO_ECO</td>
+
+<td>1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SEGMENTO</td>
+
+<td>00160212</td>
+
+</tr>
+
+<tr>
+
+<td>SEGMENT</td>
+
+<td>00160212</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO</td>
+
+<td>111</td>
+
+</tr>
+
+<tr>
+
+<td>TIPO_GRILL</td>
+
+<td>3</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>GEOCODIGO</td>
+
+<td>131203110016021201113</td>
+
+</tr>
+
+<tr>
+
+<td>transit</td>
+
+<td>160212</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO_MA</td>
+
+<td>100</td>
+
+</tr>
+
+<tr>
+
+<td>area_segme</td>
+
+<td>16</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SERPENTIN</td>
+
+<td>325848</td>
+
+</tr>
+
+<tr>
+
+<td>DOMINIO</td>
+
+<td>1211003</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>id_pre</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>1600</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>MUESTRA</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Le_1</td>
+
+<td>1600</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-78.63306939770014,-8.927734390690729,0 -78.63303362470802,-8.924123657775807,0 -78.6366647124805,-8.924088075193742,0 -78.6367005210343,-8.927698793485385,0 -78.63579274161323,-8.927707696102921,0 -78.63488496125036,-8.927716596509663,0 -78.63306939770014,-8.927734390690729,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark id="ID_00006">
+			<name>13</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>13</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>6</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>OBJECTID_1</td>
+
+<td>58</td>
+
+</tr>
+
+<tr>
+
+<td>IDDPTO</td>
+
+<td>13</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>IDPROV</td>
+
+<td>1312</td>
+
+</tr>
+
+<tr>
+
+<td>IDDIST</td>
+
+<td>131202</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>REG_NAT</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>PISO_ECO</td>
+
+<td>1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SEGMENTO</td>
+
+<td>00601444</td>
+
+</tr>
+
+<tr>
+
+<td>SEGMENT</td>
+
+<td>00601444</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO</td>
+
+<td>401</td>
+
+</tr>
+
+<tr>
+
+<td>TIPO_GRILL</td>
+
+<td>2</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>GEOCODIGO</td>
+
+<td>131202110060144404012</td>
+
+</tr>
+
+<tr>
+
+<td>transit</td>
+
+<td>601444</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO_MA</td>
+
+<td>400</td>
+
+</tr>
+
+<tr>
+
+<td>area_segme</td>
+
+<td>4</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SERPENTIN</td>
+
+<td>322573</td>
+
+</tr>
+
+<tr>
+
+<td>DOMINIO</td>
+
+<td>1214002</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>id_pre</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>800</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>MUESTRA</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Le_1</td>
+
+<td>800</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-78.67841690791629,-8.553556117784449,0 -78.6766032431249,-8.553573376248373,0 -78.67658591095594,-8.551768062612799,0 -78.67839956724441,-8.55175080784397,0 -78.67841690791629,-8.553556117784449,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark id="ID_00007">
+			<name>13</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>13</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>7</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>OBJECTID_1</td>
+
+<td>27</td>
+
+</tr>
+
+<tr>
+
+<td>IDDPTO</td>
+
+<td>13</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>IDPROV</td>
+
+<td>1312</td>
+
+</tr>
+
+<tr>
+
+<td>IDDIST</td>
+
+<td>131202</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>REG_NAT</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>PISO_ECO</td>
+
+<td>1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SEGMENTO</td>
+
+<td>00604106</td>
+
+</tr>
+
+<tr>
+
+<td>SEGMENT</td>
+
+<td>00604106</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO</td>
+
+<td>102</td>
+
+</tr>
+
+<tr>
+
+<td>TIPO_GRILL</td>
+
+<td>2</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>GEOCODIGO</td>
+
+<td>131202110060410601022</td>
+
+</tr>
+
+<tr>
+
+<td>transit</td>
+
+<td>604106</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO_MA</td>
+
+<td>100</td>
+
+</tr>
+
+<tr>
+
+<td>area_segme</td>
+
+<td>4</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SERPENTIN</td>
+
+<td>322978</td>
+
+</tr>
+
+<tr>
+
+<td>DOMINIO</td>
+
+<td>1211002</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>id_pre</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>800</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>MUESTRA</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Le_1</td>
+
+<td>800</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-78.69852404920368,-8.569613129401111,0 -78.69671034967351,-8.569630514416804,0 -78.69669288963918,-8.56782524335798,0 -78.69850658065066,-8.567807862057615,0 -78.69852404920368,-8.569613129401111,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark id="ID_00008">
+			<name>13</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>13</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>8</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>OBJECTID_1</td>
+
+<td>40</td>
+
+</tr>
+
+<tr>
+
+<td>IDDPTO</td>
+
+<td>13</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>IDPROV</td>
+
+<td>1312</td>
+
+</tr>
+
+<tr>
+
+<td>IDDIST</td>
+
+<td>131202</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>REG_NAT</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>PISO_ECO</td>
+
+<td>1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SEGMENTO</td>
+
+<td>00582360</td>
+
+</tr>
+
+<tr>
+
+<td>SEGMENT</td>
+
+<td>00582360</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO</td>
+
+<td>102</td>
+
+</tr>
+
+<tr>
+
+<td>TIPO_GRILL</td>
+
+<td>2</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>GEOCODIGO</td>
+
+<td>131202110058236001022</td>
+
+</tr>
+
+<tr>
+
+<td>transit</td>
+
+<td>582360</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO_MA</td>
+
+<td>100</td>
+
+</tr>
+
+<tr>
+
+<td>area_segme</td>
+
+<td>4</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SERPENTIN</td>
+
+<td>317292</td>
+
+</tr>
+
+<tr>
+
+<td>DOMINIO</td>
+
+<td>1211002</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>id_pre</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>800</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>MUESTRA</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Le_1</td>
+
+<td>800</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-78.61956268559713,-8.467443452691679,0 -78.6177493064782,-8.467460265673003,0 -78.61773242562602,-8.465654825111511,0 -78.61954579632857,-8.465638015765721,0 -78.61956268559713,-8.467443452691679,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark id="ID_00009">
+			<name>13</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>13</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>9</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>OBJECTID_1</td>
+
+<td>28</td>
+
+</tr>
+
+<tr>
+
+<td>IDDPTO</td>
+
+<td>13</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>IDPROV</td>
+
+<td>1312</td>
+
+</tr>
+
+<tr>
+
+<td>IDDIST</td>
+
+<td>131202</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>REG_NAT</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>PISO_ECO</td>
+
+<td>1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SEGMENTO</td>
+
+<td>00604108</td>
+
+</tr>
+
+<tr>
+
+<td>SEGMENT</td>
+
+<td>00604108</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO</td>
+
+<td>102</td>
+
+</tr>
+
+<tr>
+
+<td>TIPO_GRILL</td>
+
+<td>2</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>GEOCODIGO</td>
+
+<td>131202110060410801022</td>
+
+</tr>
+
+<tr>
+
+<td>transit</td>
+
+<td>604108</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO_MA</td>
+
+<td>100</td>
+
+</tr>
+
+<tr>
+
+<td>area_segme</td>
+
+<td>4</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SERPENTIN</td>
+
+<td>322976</td>
+
+</tr>
+
+<tr>
+
+<td>DOMINIO</td>
+
+<td>1211002</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>id_pre</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>800</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>MUESTRA</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Le_1</td>
+
+<td>800</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-78.69489664632755,-8.569647890951616,0 -78.69308293916767,-8.569665259005461,0 -78.69306549617102,-8.567859980521416,0 -78.69487919481202,-8.567842616179275,0 -78.69489664632755,-8.569647890951616,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark id="ID_00010">
+			<name>13</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>13</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>10</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>OBJECTID_1</td>
+
+<td>37</td>
+
+</tr>
+
+<tr>
+
+<td>IDDPTO</td>
+
+<td>13</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>IDPROV</td>
+
+<td>1312</td>
+
+</tr>
+
+<tr>
+
+<td>IDDIST</td>
+
+<td>131202</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>REG_NAT</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>PISO_ECO</td>
+
+<td>1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SEGMENTO</td>
+
+<td>00586240</td>
+
+</tr>
+
+<tr>
+
+<td>SEGMENT</td>
+
+<td>00586240</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO</td>
+
+<td>102</td>
+
+</tr>
+
+<tr>
+
+<td>TIPO_GRILL</td>
+
+<td>2</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>GEOCODIGO</td>
+
+<td>131202110058624001022</td>
+
+</tr>
+
+<tr>
+
+<td>transit</td>
+
+<td>586240</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO_MA</td>
+
+<td>100</td>
+
+</tr>
+
+<tr>
+
+<td>area_segme</td>
+
+<td>4</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SERPENTIN</td>
+
+<td>319002</td>
+
+</tr>
+
+<tr>
+
+<td>DOMINIO</td>
+
+<td>1211002</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>id_pre</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>800</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>MUESTRA</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Le_1</td>
+
+<td>800</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-78.55622509794328,-8.482471417226201,0 -78.55441152192908,-8.482487965392583,0 -78.55439490637512,-8.480682400320095,0 -78.55620847395511,-8.480665855726066,0 -78.55622509794328,-8.482471417226201,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark id="ID_00011">
+			<name>13</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>13</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>11</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>OBJECTID_1</td>
+
+<td>35</td>
+
+</tr>
+
+<tr>
+
+<td>IDDPTO</td>
+
+<td>13</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>IDPROV</td>
+
+<td>1312</td>
+
+</tr>
+
+<tr>
+
+<td>IDDIST</td>
+
+<td>131202</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>REG_NAT</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>PISO_ECO</td>
+
+<td>1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SEGMENTO</td>
+
+<td>00588391</td>
+
+</tr>
+
+<tr>
+
+<td>SEGMENT</td>
+
+<td>00588391</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO</td>
+
+<td>102</td>
+
+</tr>
+
+<tr>
+
+<td>TIPO_GRILL</td>
+
+<td>2</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>GEOCODIGO</td>
+
+<td>131202110058839101022</td>
+
+</tr>
+
+<tr>
+
+<td>transit</td>
+
+<td>588391</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO_MA</td>
+
+<td>100</td>
+
+</tr>
+
+<tr>
+
+<td>area_segme</td>
+
+<td>4</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SERPENTIN</td>
+
+<td>319957</td>
+
+</tr>
+
+<tr>
+
+<td>DOMINIO</td>
+
+<td>1211002</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>id_pre</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>800</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>MUESTRA</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Le_1</td>
+
+<td>800</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-78.59802047548246,-8.491115882744152,0 -78.59620694212043,-8.491132642127218,0 -78.59619011405378,-8.489327160676881,0 -78.59800363897422,-8.48931040490802,0 -78.59802047548246,-8.491115882744152,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark id="ID_00012">
+			<name>13</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>13</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>12</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>OBJECTID_1</td>
+
+<td>26</td>
+
+</tr>
+
+<tr>
+
+<td>IDDPTO</td>
+
+<td>13</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>IDPROV</td>
+
+<td>1312</td>
+
+</tr>
+
+<tr>
+
+<td>IDDIST</td>
+
+<td>131202</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>REG_NAT</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>PISO_ECO</td>
+
+<td>1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SEGMENTO</td>
+
+<td>00609717</td>
+
+</tr>
+
+<tr>
+
+<td>SEGMENT</td>
+
+<td>00609717</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO</td>
+
+<td>110</td>
+
+</tr>
+
+<tr>
+
+<td>TIPO_GRILL</td>
+
+<td>2</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>GEOCODIGO</td>
+
+<td>131202110060971701102</td>
+
+</tr>
+
+<tr>
+
+<td>transit</td>
+
+<td>609717</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO_MA</td>
+
+<td>100</td>
+
+</tr>
+
+<tr>
+
+<td>area_segme</td>
+
+<td>4</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SERPENTIN</td>
+
+<td>323768</td>
+
+</tr>
+
+<tr>
+
+<td>DOMINIO</td>
+
+<td>1211002</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>id_pre</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>800</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>MUESTRA</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Le_1</td>
+
+<td>800</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-78.70970458630632,-8.600197775211775,0 -78.7078907646162,-8.600215274461494,0 -78.70787318840088,-8.598410029193229,0 -78.70968700154118,-8.598392533670284,0 -78.70970458630632,-8.600197775211775,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark id="ID_00013">
+			<name>13</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>13</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>13</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>OBJECTID_1</td>
+
+<td>36</td>
+
+</tr>
+
+<tr>
+
+<td>IDDPTO</td>
+
+<td>13</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>IDPROV</td>
+
+<td>1312</td>
+
+</tr>
+
+<tr>
+
+<td>IDDIST</td>
+
+<td>131202</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>REG_NAT</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>PISO_ECO</td>
+
+<td>1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SEGMENTO</td>
+
+<td>00588419</td>
+
+</tr>
+
+<tr>
+
+<td>SEGMENT</td>
+
+<td>00588419</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO</td>
+
+<td>102</td>
+
+</tr>
+
+<tr>
+
+<td>TIPO_GRILL</td>
+
+<td>2</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>GEOCODIGO</td>
+
+<td>131202110058841901022</td>
+
+</tr>
+
+<tr>
+
+<td>transit</td>
+
+<td>588419</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO_MA</td>
+
+<td>100</td>
+
+</tr>
+
+<tr>
+
+<td>area_segme</td>
+
+<td>4</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SERPENTIN</td>
+
+<td>319949</td>
+
+</tr>
+
+<tr>
+
+<td>DOMINIO</td>
+
+<td>1211002</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>id_pre</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>800</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>MUESTRA</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Le_1</td>
+
+<td>800</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-78.54724014519439,-8.491581967805075,0 -78.54542650866553,-8.491598491794369,0 -78.54540991699741,-8.489792909882182,0 -78.54722354508232,-8.48977638945634,0 -78.54724014519439,-8.491581967805075,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark id="ID_00014">
+			<name>13</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>13</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>14</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>OBJECTID_1</td>
+
+<td>33</td>
+
+</tr>
+
+<tr>
+
+<td>IDDPTO</td>
+
+<td>13</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>IDPROV</td>
+
+<td>1312</td>
+
+</tr>
+
+<tr>
+
+<td>IDDIST</td>
+
+<td>131202</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>REG_NAT</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>PISO_ECO</td>
+
+<td>9</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SEGMENTO</td>
+
+<td>00589766</td>
+
+</tr>
+
+<tr>
+
+<td>SEGMENT</td>
+
+<td>00589766</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO</td>
+
+<td>102</td>
+
+</tr>
+
+<tr>
+
+<td>TIPO_GRILL</td>
+
+<td>2</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>GEOCODIGO</td>
+
+<td>131202190058976601022</td>
+
+</tr>
+
+<tr>
+
+<td>transit</td>
+
+<td>589766</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO_MA</td>
+
+<td>100</td>
+
+</tr>
+
+<tr>
+
+<td>area_segme</td>
+
+<td>4</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SERPENTIN</td>
+
+<td>320495</td>
+
+</tr>
+
+<tr>
+
+<td>DOMINIO</td>
+
+<td>1291002</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>id_pre</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>800</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>MUESTRA</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Le_1</td>
+
+<td>800</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-78.476554461064,-8.497637318978757,0 -78.47474065791705,-8.497653525469492,0 -78.47472438487208,-8.495847806590728,0 -78.47653817956626,-8.495831603592821,0 -78.476554461064,-8.497637318978757,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark id="ID_00015">
+			<name>13</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>13</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>15</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>OBJECTID_1</td>
+
+<td>5</td>
+
+</tr>
+
+<tr>
+
+<td>IDDPTO</td>
+
+<td>13</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>IDPROV</td>
+
+<td>1312</td>
+
+</tr>
+
+<tr>
+
+<td>IDDIST</td>
+
+<td>131201</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>REG_NAT</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>PISO_ECO</td>
+
+<td>3</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SEGMENTO</td>
+
+<td>01794908</td>
+
+</tr>
+
+<tr>
+
+<td>SEGMENT</td>
+
+<td>01794908</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO</td>
+
+<td>102</td>
+
+</tr>
+
+<tr>
+
+<td>TIPO_GRILL</td>
+
+<td>1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>GEOCODIGO</td>
+
+<td>131201130179490801021</td>
+
+</tr>
+
+<tr>
+
+<td>transit</td>
+
+<td>1794908</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO_MA</td>
+
+<td>100</td>
+
+</tr>
+
+<tr>
+
+<td>area_segme</td>
+
+<td>1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SERPENTIN</td>
+
+<td>265838</td>
+
+</tr>
+
+<tr>
+
+<td>DOMINIO</td>
+
+<td>1231001</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>id_pre</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>400</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>MUESTRA</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Le_1</td>
+
+<td>400</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-78.64751528280998,-8.156628964667975,0 -78.64660933560535,-8.156637128333838,0 -78.64660114409691,-8.155734423096684,0 -78.64750708927747,-8.155726260346143,0 -78.64751528280998,-8.156628964667975,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark id="ID_00016">
+			<name>13</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>13</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>16</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>OBJECTID_1</td>
+
+<td>4</td>
+
+</tr>
+
+<tr>
+
+<td>IDDPTO</td>
+
+<td>13</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>IDPROV</td>
+
+<td>1312</td>
+
+</tr>
+
+<tr>
+
+<td>IDDIST</td>
+
+<td>131203</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>REG_NAT</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>PISO_ECO</td>
+
+<td>1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SEGMENTO</td>
+
+<td>00636894</td>
+
+</tr>
+
+<tr>
+
+<td>SEGMENT</td>
+
+<td>00636894</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO</td>
+
+<td>111</td>
+
+</tr>
+
+<tr>
+
+<td>TIPO_GRILL</td>
+
+<td>2</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>GEOCODIGO</td>
+
+<td>131203110063689401112</td>
+
+</tr>
+
+<tr>
+
+<td>transit</td>
+
+<td>636894</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO_MA</td>
+
+<td>100</td>
+
+</tr>
+
+<tr>
+
+<td>area_segme</td>
+
+<td>4</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SERPENTIN</td>
+
+<td>326383</td>
+
+</tr>
+
+<tr>
+
+<td>DOMINIO</td>
+
+<td>1211002</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>id_pre</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>800</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>MUESTRA</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Le_1</td>
+
+<td>800</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-78.64243461640983,-8.956530871590973,0 -78.6406189254249,-8.956548759744161,0 -78.64060094112075,-8.954743411401674,0 -78.6424166231847,-8.954725526911235,0 -78.64243461640983,-8.956530871590973,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark id="ID_00017">
+			<name>13</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>13</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>17</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>OBJECTID_1</td>
+
+<td>2</td>
+
+</tr>
+
+<tr>
+
+<td>IDDPTO</td>
+
+<td>13</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>IDPROV</td>
+
+<td>1312</td>
+
+</tr>
+
+<tr>
+
+<td>IDDIST</td>
+
+<td>131201</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>REG_NAT</td>
+
+<td>2</td>
+
+</tr>
+
+<tr>
+
+<td>PISO_ECO</td>
+
+<td>3</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SEGMENTO</td>
+
+<td>00454224</td>
+
+</tr>
+
+<tr>
+
+<td>SEGMENT</td>
+
+<td>00454224</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO</td>
+
+<td>101</td>
+
+</tr>
+
+<tr>
+
+<td>TIPO_GRILL</td>
+
+<td>2</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>GEOCODIGO</td>
+
+<td>131201230045422401012</td>
+
+</tr>
+
+<tr>
+
+<td>transit</td>
+
+<td>454224</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO_MA</td>
+
+<td>100</td>
+
+</tr>
+
+<tr>
+
+<td>area_segme</td>
+
+<td>4</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SERPENTIN</td>
+
+<td>268151</td>
+
+</tr>
+
+<tr>
+
+<td>DOMINIO</td>
+
+<td>1231002</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>id_pre</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>800</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>MUESTRA</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Le_1</td>
+
+<td>800</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-78.64214507033223,-8.163899593151124,0 -78.64033313134462,-8.163915908882082,0 -78.64031676263029,-8.162110486330175,0 -78.64212869351447,-8.162094174254737,0 -78.64214507033223,-8.163899593151124,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark id="ID_00018">
+			<name>13</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>13</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>18</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>OBJECTID_1</td>
+
+<td>43</td>
+
+</tr>
+
+<tr>
+
+<td>IDDPTO</td>
+
+<td>13</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>IDPROV</td>
+
+<td>1312</td>
+
+</tr>
+
+<tr>
+
+<td>IDDIST</td>
+
+<td>131201</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>REG_NAT</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>PISO_ECO</td>
+
+<td>1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SEGMENTO</td>
+
+<td>00576968</td>
+
+</tr>
+
+<tr>
+
+<td>SEGMENT</td>
+
+<td>00576968</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO</td>
+
+<td>102</td>
+
+</tr>
+
+<tr>
+
+<td>TIPO_GRILL</td>
+
+<td>2</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>GEOCODIGO</td>
+
+<td>131201110057696801022</td>
+
+</tr>
+
+<tr>
+
+<td>transit</td>
+
+<td>576968</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO_MA</td>
+
+<td>100</td>
+
+</tr>
+
+<tr>
+
+<td>area_segme</td>
+
+<td>4</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SERPENTIN</td>
+
+<td>315014</td>
+
+</tr>
+
+<tr>
+
+<td>DOMINIO</td>
+
+<td>1211002</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>id_pre</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>800</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>MUESTRA</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Le_1</td>
+
+<td>800</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-78.80251721779582,-8.447651571536499,0 -78.80070430906105,-8.447669192403255,0 -78.80068661777091,-8.445864126148253,0 -78.80249951811669,-8.445846509099605,0 -78.80251721779582,-8.447651571536499,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark id="ID_00019">
+			<name>13</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>13</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>19</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>OBJECTID_1</td>
+
+<td>44</td>
+
+</tr>
+
+<tr>
+
+<td>IDDPTO</td>
+
+<td>13</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>IDPROV</td>
+
+<td>1312</td>
+
+</tr>
+
+<tr>
+
+<td>IDDIST</td>
+
+<td>131201</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>REG_NAT</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>PISO_ECO</td>
+
+<td>1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SEGMENTO</td>
+
+<td>00574681</td>
+
+</tr>
+
+<tr>
+
+<td>SEGMENT</td>
+
+<td>00574681</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO</td>
+
+<td>102</td>
+
+</tr>
+
+<tr>
+
+<td>TIPO_GRILL</td>
+
+<td>2</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>GEOCODIGO</td>
+
+<td>131201110057468101022</td>
+
+</tr>
+
+<tr>
+
+<td>transit</td>
+
+<td>574681</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO_MA</td>
+
+<td>100</td>
+
+</tr>
+
+<tr>
+
+<td>area_segme</td>
+
+<td>4</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SERPENTIN</td>
+
+<td>314078</td>
+
+</tr>
+
+<tr>
+
+<td>DOMINIO</td>
+
+<td>1211002</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>id_pre</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>800</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>MUESTRA</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Le_1</td>
+
+<td>800</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-78.80425931386628,-8.440413706630821,0 -78.80244644259561,-8.440431320572523,0 -78.80242875859372,-8.438626257324843,0 -78.8042416214829,-8.438608647202919,0 -78.80425931386628,-8.440413706630821,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark id="ID_00020">
+			<name>13</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>13</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>20</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>OBJECTID_1</td>
+
+<td>41</td>
+
+</tr>
+
+<tr>
+
+<td>IDDPTO</td>
+
+<td>13</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>IDPROV</td>
+
+<td>1312</td>
+
+</tr>
+
+<tr>
+
+<td>IDDIST</td>
+
+<td>131201</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>REG_NAT</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>PISO_ECO</td>
+
+<td>1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SEGMENTO</td>
+
+<td>00579314</td>
+
+</tr>
+
+<tr>
+
+<td>SEGMENT</td>
+
+<td>00579314</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO</td>
+
+<td>102</td>
+
+</tr>
+
+<tr>
+
+<td>TIPO_GRILL</td>
+
+<td>2</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>GEOCODIGO</td>
+
+<td>131201110057931401022</td>
+
+</tr>
+
+<tr>
+
+<td>transit</td>
+
+<td>579314</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO_MA</td>
+
+<td>100</td>
+
+</tr>
+
+<tr>
+
+<td>area_segme</td>
+
+<td>4</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SERPENTIN</td>
+
+<td>316163</td>
+
+</tr>
+
+<tr>
+
+<td>DOMINIO</td>
+
+<td>1211002</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>id_pre</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>800</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>MUESTRA</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Le_1</td>
+
+<td>800</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-78.86243093812011,-8.456090070693405,0 -78.86061811775221,-8.45610798659904,0 -78.86060012977609,-8.454303048317026,0 -78.86241294174864,-8.454285136289387,0 -78.86243093812011,-8.456090070693405,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark id="ID_00021">
+			<name>13</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>13</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>21</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>OBJECTID_1</td>
+
+<td>9</td>
+
+</tr>
+
+<tr>
+
+<td>IDDPTO</td>
+
+<td>13</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>IDPROV</td>
+
+<td>1312</td>
+
+</tr>
+
+<tr>
+
+<td>IDDIST</td>
+
+<td>131201</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>REG_NAT</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>PISO_ECO</td>
+
+<td>3</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SEGMENTO</td>
+
+<td>00446709</td>
+
+</tr>
+
+<tr>
+
+<td>SEGMENT</td>
+
+<td>00446709</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO</td>
+
+<td>102</td>
+
+</tr>
+
+<tr>
+
+<td>TIPO_GRILL</td>
+
+<td>2</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>GEOCODIGO</td>
+
+<td>131201130044670901022</td>
+
+</tr>
+
+<tr>
+
+<td>transit</td>
+
+<td>446709</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO_MA</td>
+
+<td>100</td>
+
+</tr>
+
+<tr>
+
+<td>area_segme</td>
+
+<td>4</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SERPENTIN</td>
+
+<td>263676</td>
+
+</tr>
+
+<tr>
+
+<td>DOMINIO</td>
+
+<td>1231002</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>id_pre</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>800</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>MUESTRA</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Le_1</td>
+
+<td>800</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-78.64021862893856,-8.151277946963319,0 -78.63840674289385,-8.151294229043034,0 -78.63839040846736,-8.149488801486227,0 -78.64020228642154,-8.149472523060004,0 -78.64021862893856,-8.151277946963319,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark id="ID_00022">
+			<name>13</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>13</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>22</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>OBJECTID_1</td>
+
+<td>10</td>
+
+</tr>
+
+<tr>
+
+<td>IDDPTO</td>
+
+<td>13</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>IDPROV</td>
+
+<td>1312</td>
+
+</tr>
+
+<tr>
+
+<td>IDDIST</td>
+
+<td>131201</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>REG_NAT</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>PISO_ECO</td>
+
+<td>4</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SEGMENTO</td>
+
+<td>00446247</td>
+
+</tr>
+
+<tr>
+
+<td>SEGMENT</td>
+
+<td>00446247</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO</td>
+
+<td>102</td>
+
+</tr>
+
+<tr>
+
+<td>TIPO_GRILL</td>
+
+<td>2</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>GEOCODIGO</td>
+
+<td>131201140044624701022</td>
+
+</tr>
+
+<tr>
+
+<td>transit</td>
+
+<td>446247</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO_MA</td>
+
+<td>100</td>
+
+</tr>
+
+<tr>
+
+<td>area_segme</td>
+
+<td>4</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SERPENTIN</td>
+
+<td>263008</td>
+
+</tr>
+
+<tr>
+
+<td>DOMINIO</td>
+
+<td>1241002</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>id_pre</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>800</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>MUESTRA</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Le_1</td>
+
+<td>800</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-78.64020228642154,-8.149472523060004,0 -78.63839040846736,-8.149488801486227,0 -78.63837407778119,-8.147683373736561,0 -78.64018594764667,-8.147667098963799,0 -78.64020228642154,-8.149472523060004,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark id="ID_00023">
+			<name>13</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>13</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>23</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>OBJECTID_1</td>
+
+<td>38</td>
+
+</tr>
+
+<tr>
+
+<td>IDDPTO</td>
+
+<td>13</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>IDPROV</td>
+
+<td>1312</td>
+
+</tr>
+
+<tr>
+
+<td>IDDIST</td>
+
+<td>131201</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>REG_NAT</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>PISO_ECO</td>
+
+<td>1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SEGMENTO</td>
+
+<td>00584513</td>
+
+</tr>
+
+<tr>
+
+<td>SEGMENT</td>
+
+<td>00584513</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO</td>
+
+<td>102</td>
+
+</tr>
+
+<tr>
+
+<td>TIPO_GRILL</td>
+
+<td>2</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>GEOCODIGO</td>
+
+<td>131201110058451301022</td>
+
+</tr>
+
+<tr>
+
+<td>transit</td>
+
+<td>584513</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ESTRATO_MA</td>
+
+<td>100</td>
+
+</tr>
+
+<tr>
+
+<td>area_segme</td>
+
+<td>4</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SERPENTIN</td>
+
+<td>318200</td>
+
+</tr>
+
+<tr>
+
+<td>DOMINIO</td>
+
+<td>1211002</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>id_pre</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Leng</td>
+
+<td>800</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>MUESTRA</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>Shape_Le_1</td>
+
+<td>800</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-78.86803174875944,-8.472280568449625,0 -78.86621886470171,-8.472298544389025,0 -78.86620081567183,-8.470493619585927,0 -78.86801369131777,-8.470475647530263,0 -78.86803174875944,-8.472280568449625,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		</placemarks>
+	</Folder>
+</Document>
+</kml>

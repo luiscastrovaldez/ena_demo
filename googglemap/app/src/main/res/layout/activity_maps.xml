@@ -21,64 +21,33 @@
             android:rowCount="2">
 
             <CheckBox
-                android:id="@+id/checkbox1"
+                android:id="@+id/campoMarte"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="onCheckboxClicked"
-                android:text="Vias Vecinal LG"
+                android:text="Muestra Campo Marte"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
             <CheckBox
-                android:id="@+id/checkbox2"
+                android:id="@+id/smEnaBeSM"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/checkbox1"
                 android:onClick="onCheckboxClicked"
-                android:text="Centros Poblados LG"
+                android:text="SM Ena"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
             <CheckBox
-                android:id="@+id/checkbox3"
+                android:id="@+id/smEnaViru"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/checkbox2"
                 android:onClick="onCheckboxClicked"
-                android:text="Vias Depart LG"
+                android:text="SM Ena Viru"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
-
-            <CheckBox
-                android:id="@+id/checkbox4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/checkbox3"
-                android:onClick="onCheckboxClicked"
-                android:text="Catastro Rural"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-
-            <CheckBox
-                android:id="@+id/checkbox5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/checkbox4"
-                android:onClick="onCheckboxClicked"
-                android:text="SM_ENA_VIRU"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-
-            <CheckBox
-                android:id="@+id/checkbox6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/checkbox5"
-                android:onClick="onCheckboxClicked"
-                android:text="MUESTRA_CAMPO_MARTE"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-
 
 
         </GridLayout>
@@ -160,11 +129,11 @@
             fab:fab_size="mini" />
 
         <com.github.clans.fab.FloatingActionButton
-            android:id="@+id/generarPoligono"
+            android:id="@+id/dibujarPoligono"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_format_shapes_black_24dp"
-            fab:fab_label="Generar Poligono"
+            fab:fab_label="Dibujar Poligono"
             fab:fab_size="mini" />
 
         <com.github.clans.fab.FloatingActionButton

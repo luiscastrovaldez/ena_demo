@@ -4,6 +4,8 @@ package pe.minagri.googlemap;
 import android.Manifest;
 import android.os.Environment;
 
+import com.google.android.gms.maps.model.LatLng;
+
 import java.io.File;
 
 public final class Constants {
@@ -13,16 +15,11 @@ public final class Constants {
     }
 
     public static final String PATH_MINAGRI = Environment.getExternalStorageDirectory() + File.separator + "enamap";
-    public static final String PATH_MINAGRI_KML = Environment.getExternalStorageDirectory() + File.separator + "enamap" + File.separator + "kml";
-    public static final String PATH_MINAGRI_ARCHIVOS = Environment.getExternalStorageDirectory() + File.separator + "enamap" + File.separator + "csv";
-    public static final String PATH_MINAGRI_DB = Environment.getExternalStorageDirectory() + File.separator + "enamap" + File.separator + "db";
-    public static final String PATH_MINAGRI_FOTOS = Environment.getExternalStorageDirectory() + File.separator + "enamap" + File.separator + "fotos";
+    public static final String PATH_MINAGRI_KML = PATH_MINAGRI + File.separator + "kml";
+    public static final String PATH_MINAGRI_DB = PATH_MINAGRI + File.separator + "db";
 
-    public static final int CAMERA_REQUEST_CODE = 100;
-    public static final int FICHA_REQUEST_CODE = 10;
-    public static final int LISTADO_REQUEST_CODE = 20;
-    public static final int ARCHIVOS_REQUEST_CODE = 30;
-    public static final int MAPAS_REQUEST_CODE = 40;
+    public static final int WRITE_EXTERNAL_STORAGE_REQUEST_CODE = 1;
+    public static final int GPS_STORAGE_REQUEST_CODE = 2;
 
     public static final int PERMISSION_ALL = 1;
 
@@ -37,11 +34,23 @@ public final class Constants {
 
     };
 
-    public static final String NUMERO_DNI_ENCUESTADOR = "numeroDniEncuestador";
-    public static final String NOMBRE_ENCUESTADOR = "nombreEncuestador";
-    public static final String DEPARTAMENTO = "departamento";
-    public static final String PROVINCIA = "provincia";
-    public static final String DISTRITO = "distrito";
-    public static final String ID = "id";
+
+    public static final LatLng UPV = new LatLng(-12.063403, -77.039376);
+
+    public static final String MINAGRI = "Minagri";
+
+    public static final String TITULO_GENERANDO_POLIGONO = "Dibujando Poligono...";
+    public static final String OBTENIENDO_INFORMACION_POLIGONO = "Obteniendo Informacion...";
+
+    public static final String OBTENIENDO_UBICACION_ACTUAL = "Obteniendo Ubicacion Actual...";
+
+    public static final String LOTE = "Lote";
+    public static final String PARCELA = "Parcela";
+
+    public static final String MUESTRA_CAMPO_MARTE_KML = "MUESTRA_CAMPO_MARTE.kml";
+    public static final String SM_ENA_BE_SM_KML = "SM_ENA_BE_SM.kml";
+    public static final String SM_ENA_VIRU_KML = "SM_ENA_VIRU.kml";
+
+
 
 }
