@@ -9,113 +9,114 @@
 8-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="29" />
 9-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml
-10
-11    <!--
-12         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
-13         Google Maps Android API v2, but you must specify either coarse or fine
-14         location permissions for the 'MyLocation' functionality.
-15    -->
-16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-16-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:10:5-79
-16-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:10:22-76
-17    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-17-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:11:5-81
-17-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:11:22-78
-18    <uses-permission android:name="android.permission.INTERNET" />
-18-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:12:5-67
-18-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:12:22-64
-19    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+10    <!--
+11         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+12         Google Maps Android API v2, but you must specify either coarse or fine
+13         location permissions for the 'MyLocation' functionality.
+14    -->
+15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+15-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:9:5-79
+15-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:9:22-76
+16    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+16-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:10:5-81
+16-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:10:22-78
+17    <uses-permission android:name="android.permission.INTERNET" />
+17-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:11:5-67
+17-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:11:22-64
+18    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+18-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:12:5-81
+18-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:12:22-78
+19    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 19-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:13:5-80
-19-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:13:22-78
-20    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-20-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:14:5-79
-20-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:14:22-77
-21
-22    <!-- Include required permissions for Google Maps API to run. -->
-23    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-23-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\c6130bfd518d6fb3467e7c67098ab157\jetified-play-services-maps-16.1.0\AndroidManifest.xml:23:5-79
-23-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\c6130bfd518d6fb3467e7c67098ab157\jetified-play-services-maps-16.1.0\AndroidManifest.xml:23:22-76
-24
-25    <uses-feature
-25-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\c6130bfd518d6fb3467e7c67098ab157\jetified-play-services-maps-16.1.0\AndroidManifest.xml:26:5-28:35
-26        android:glEsVersion="0x00020000"
-26-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\c6130bfd518d6fb3467e7c67098ab157\jetified-play-services-maps-16.1.0\AndroidManifest.xml:27:9-41
-27        android:required="true" />
-27-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\c6130bfd518d6fb3467e7c67098ab157\jetified-play-services-maps-16.1.0\AndroidManifest.xml:28:9-32
-28
-29    <application
-29-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:16:5-45:19
-30        android:allowBackup="true"
-30-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:17:9-35
-31        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-31-->[androidx.core:core:1.0.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\21dadf335ac8035a991bc5e1b16c722a\core-1.0.1\AndroidManifest.xml:22:18-86
-32        android:debuggable="true"
-33        android:icon="@mipmap/ic_launcher"
-33-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:18:9-43
-34        android:label="@string/app_name"
-34-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:19:9-41
-35        android:roundIcon="@mipmap/ic_launcher_round"
-35-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:20:9-54
-36        android:supportsRtl="true"
-36-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:21:9-35
+19-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:13:22-77
+20
+21    <!-- Include required permissions for Google Maps API to run. -->
+22    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+22-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\c6130bfd518d6fb3467e7c67098ab157\jetified-play-services-maps-16.1.0\AndroidManifest.xml:23:5-79
+22-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\c6130bfd518d6fb3467e7c67098ab157\jetified-play-services-maps-16.1.0\AndroidManifest.xml:23:22-76
+23
+24    <uses-feature
+24-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\c6130bfd518d6fb3467e7c67098ab157\jetified-play-services-maps-16.1.0\AndroidManifest.xml:26:5-28:35
+25        android:glEsVersion="0x00020000"
+25-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\c6130bfd518d6fb3467e7c67098ab157\jetified-play-services-maps-16.1.0\AndroidManifest.xml:27:9-41
+26        android:required="true" />
+26-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\c6130bfd518d6fb3467e7c67098ab157\jetified-play-services-maps-16.1.0\AndroidManifest.xml:28:9-32
+27
+28    <application
+28-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:15:5-46:19
+29        android:allowBackup="true"
+29-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:16:9-35
+30        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+30-->[androidx.core:core:1.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\03736cf4bc3669a69d502627b70a527e\core-1.1.0\AndroidManifest.xml:24:18-86
+31        android:debuggable="true"
+32        android:icon="@mipmap/ic_launcher"
+32-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:17:9-43
+33        android:label="@string/app_name"
+33-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:18:9-41
+34        android:roundIcon="@mipmap/ic_launcher_round"
+34-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:19:9-54
+35        android:supportsRtl="true"
+35-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:20:9-35
+36        android:testOnly="true"
 37        android:theme="@style/AppTheme" >
-37-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:22:9-40
-38
-39        <!--
-40             The API key for Google Maps-based APIs is defined as a string resource.
-41             (See the file "res/values/google_maps_api.xml").
-42             Note that the API key is linked to the encryption key used to sign the APK.
-43             You need a different API key for each encryption key, including the release key that is used to
-44             sign the APK for publishing.
-45             You can define the keys for the debug and release targets in src/debug/ and src/release/.
-46        -->
-47        <meta-data
-47-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:32:9-34:55
-48            android:name="com.google.android.geo.API_KEY"
-48-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:33:13-58
-49            android:value="@string/google_maps_key" />
-49-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:34:13-52
-50
-51        <activity
-51-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:36:9-44:20
-52            android:name="pe.minagri.googlemap.MapsActivity"
-52-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:37:13-41
-53            android:label="@string/title_activity_maps" >
-53-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:38:13-56
-54            <intent-filter>
-54-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:39:13-43:29
-55                <action android:name="android.intent.action.MAIN" />
-55-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:40:17-69
-55-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:40:25-66
-56
-57                <category android:name="android.intent.category.LAUNCHER" />
-57-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:42:17-77
-57-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:42:27-74
-58            </intent-filter>
-59        </activity>
-60        <!-- Needs to be explicitly declared on P+ -->
-61        <uses-library
-61-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\c6130bfd518d6fb3467e7c67098ab157\jetified-play-services-maps-16.1.0\AndroidManifest.xml:33:9-35:40
-62            android:name="org.apache.http.legacy"
-62-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\c6130bfd518d6fb3467e7c67098ab157\jetified-play-services-maps-16.1.0\AndroidManifest.xml:34:13-50
-63            android:required="false" />
-63-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\c6130bfd518d6fb3467e7c67098ab157\jetified-play-services-maps-16.1.0\AndroidManifest.xml:35:13-37
-64
-65        <activity
-65-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\dc430233f5ea481f5583c9299ad8f1e0\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
-66            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-66-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\dc430233f5ea481f5583c9299ad8f1e0\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
-67            android:exported="false"
-67-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\dc430233f5ea481f5583c9299ad8f1e0\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
-68            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-68-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\dc430233f5ea481f5583c9299ad8f1e0\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
-69
-70        <meta-data
-70-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\9f534c7e747f587bf05f0cb50b9866d5\jetified-play-services-basement-16.0.1\AndroidManifest.xml:23:9-25:69
-71            android:name="com.google.android.gms.version"
-71-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\9f534c7e747f587bf05f0cb50b9866d5\jetified-play-services-basement-16.0.1\AndroidManifest.xml:24:13-58
-72            android:value="@integer/google_play_services_version" />
-72-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\9f534c7e747f587bf05f0cb50b9866d5\jetified-play-services-basement-16.0.1\AndroidManifest.xml:25:13-66
-73    </application>
-74
-75</manifest>
+37-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:21:9-40
+38        <activity
+38-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:22:9-29:20
+39            android:name="pe.minagri.googlemap.MainActivity"
+39-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:23:13-41
+40            android:label="@string/title_activity_main"
+40-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:24:13-56
+41            android:theme="@style/AppTheme.NoActionBar" >
+41-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:25:13-56
+42        </activity>
+43
+44        <meta-data
+44-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:31:9-33:55
+45            android:name="com.google.android.geo.API_KEY"
+45-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:32:13-58
+46            android:value="@string/google_maps_key" />
+46-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:33:13-52
+47
+48        <activity
+48-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:35:9-45:20
+49            android:name="pe.minagri.googlemap.MapsActivity"
+49-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:36:13-41
+50            android:label="@string/title_activity_maps" >
+50-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:37:13-56
+51            <intent-filter>
+51-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:39:13-43:29
+52                <action android:name="android.intent.action.MAIN" />
+52-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:40:17-69
+52-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:40:25-66
+53
+54                <category android:name="android.intent.category.LAUNCHER" />
+54-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:42:17-77
+54-->D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:42:27-74
+55            </intent-filter>
+56        </activity>
+57        <!-- Needs to be explicitly declared on P+ -->
+58        <uses-library
+58-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\c6130bfd518d6fb3467e7c67098ab157\jetified-play-services-maps-16.1.0\AndroidManifest.xml:33:9-35:40
+59            android:name="org.apache.http.legacy"
+59-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\c6130bfd518d6fb3467e7c67098ab157\jetified-play-services-maps-16.1.0\AndroidManifest.xml:34:13-50
+60            android:required="false" />
+60-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\c6130bfd518d6fb3467e7c67098ab157\jetified-play-services-maps-16.1.0\AndroidManifest.xml:35:13-37
+61
+62        <activity
+62-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\dc430233f5ea481f5583c9299ad8f1e0\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
+63            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+63-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\dc430233f5ea481f5583c9299ad8f1e0\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
+64            android:exported="false"
+64-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\dc430233f5ea481f5583c9299ad8f1e0\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
+65            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+65-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\dc430233f5ea481f5583c9299ad8f1e0\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
+66
+67        <meta-data
+67-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\9f534c7e747f587bf05f0cb50b9866d5\jetified-play-services-basement-16.0.1\AndroidManifest.xml:23:9-25:69
+68            android:name="com.google.android.gms.version"
+68-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\9f534c7e747f587bf05f0cb50b9866d5\jetified-play-services-basement-16.0.1\AndroidManifest.xml:24:13-58
+69            android:value="@integer/google_play_services_version" />
+69-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\9f534c7e747f587bf05f0cb50b9866d5\jetified-play-services-basement-16.0.1\AndroidManifest.xml:25:13-66
+70    </application>
+71
+72</manifest>

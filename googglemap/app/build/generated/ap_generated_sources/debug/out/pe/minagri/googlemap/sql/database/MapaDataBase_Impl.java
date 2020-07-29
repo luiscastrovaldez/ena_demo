@@ -21,25 +21,25 @@ import java.util.HashSet;
 
 @SuppressWarnings("unchecked")
 public final class MapaDataBase_Impl extends MapaDataBase {
-  private volatile CabeceraDao _cabeceraDao;
+  private volatile PolygonDao _polygonDao;
 
-  private volatile DetalleDao _detalleDao;
+  private volatile PointDao _pointDao;
 
   @Override
   protected SupportSQLiteOpenHelper createOpenHelper(DatabaseConfiguration configuration) {
-    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(1) {
+    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(2) {
       @Override
       public void createAllTables(SupportSQLiteDatabase _db) {
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `CABECERA` (`uid` TEXT NOT NULL, `tipo_grafico` TEXT NOT NULL, `area` REAL NOT NULL, PRIMARY KEY(`uid`))");
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `DETALLE` (`uidDetalle` TEXT NOT NULL, `uidCabecera` TEXT NOT NULL, `latitud` REAL NOT NULL, `longitud` REAL NOT NULL, PRIMARY KEY(`uidDetalle`))");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `Polygon` (`uid` TEXT NOT NULL, `area` REAL NOT NULL, `name` TEXT NOT NULL, `type` TEXT NOT NULL, `uidParent` TEXT, PRIMARY KEY(`uid`))");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `Point` (`uid` TEXT NOT NULL, `uidPolygon` TEXT NOT NULL, `latitude` REAL NOT NULL, `longitude` REAL NOT NULL, PRIMARY KEY(`uid`))");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"1f410d3c217f48e26038de24f3820718\")");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"921d7d41f24ce1c8af9e1f45c86b2133\")");
       }
 
       @Override
       public void dropAllTables(SupportSQLiteDatabase _db) {
-        _db.execSQL("DROP TABLE IF EXISTS `CABECERA`");
-        _db.execSQL("DROP TABLE IF EXISTS `DETALLE`");
+        _db.execSQL("DROP TABLE IF EXISTS `Polygon`");
+        _db.execSQL("DROP TABLE IF EXISTS `Point`");
       }
 
       @Override
@@ -64,35 +64,37 @@ public final class MapaDataBase_Impl extends MapaDataBase {
 
       @Override
       protected void validateMigration(SupportSQLiteDatabase _db) {
-        final HashMap<String, TableInfo.Column> _columnsCABECERA = new HashMap<String, TableInfo.Column>(3);
-        _columnsCABECERA.put("uid", new TableInfo.Column("uid", "TEXT", true, 1));
-        _columnsCABECERA.put("tipo_grafico", new TableInfo.Column("tipo_grafico", "TEXT", true, 0));
-        _columnsCABECERA.put("area", new TableInfo.Column("area", "REAL", true, 0));
-        final HashSet<TableInfo.ForeignKey> _foreignKeysCABECERA = new HashSet<TableInfo.ForeignKey>(0);
-        final HashSet<TableInfo.Index> _indicesCABECERA = new HashSet<TableInfo.Index>(0);
-        final TableInfo _infoCABECERA = new TableInfo("CABECERA", _columnsCABECERA, _foreignKeysCABECERA, _indicesCABECERA);
-        final TableInfo _existingCABECERA = TableInfo.read(_db, "CABECERA");
-        if (! _infoCABECERA.equals(_existingCABECERA)) {
-          throw new IllegalStateException("Migration didn't properly handle CABECERA(pe.minagri.googlemap.sql.Cabecera).\n"
-                  + " Expected:\n" + _infoCABECERA + "\n"
-                  + " Found:\n" + _existingCABECERA);
+        final HashMap<String, TableInfo.Column> _columnsPolygon = new HashMap<String, TableInfo.Column>(5);
+        _columnsPolygon.put("uid", new TableInfo.Column("uid", "TEXT", true, 1));
+        _columnsPolygon.put("area", new TableInfo.Column("area", "REAL", true, 0));
+        _columnsPolygon.put("name", new TableInfo.Column("name", "TEXT", true, 0));
+        _columnsPolygon.put("type", new TableInfo.Column("type", "TEXT", true, 0));
+        _columnsPolygon.put("uidParent", new TableInfo.Column("uidParent", "TEXT", false, 0));
+        final HashSet<TableInfo.ForeignKey> _foreignKeysPolygon = new HashSet<TableInfo.ForeignKey>(0);
+        final HashSet<TableInfo.Index> _indicesPolygon = new HashSet<TableInfo.Index>(0);
+        final TableInfo _infoPolygon = new TableInfo("Polygon", _columnsPolygon, _foreignKeysPolygon, _indicesPolygon);
+        final TableInfo _existingPolygon = TableInfo.read(_db, "Polygon");
+        if (! _infoPolygon.equals(_existingPolygon)) {
+          throw new IllegalStateException("Migration didn't properly handle Polygon(pe.minagri.googlemap.sql.Polygon).\n"
+                  + " Expected:\n" + _infoPolygon + "\n"
+                  + " Found:\n" + _existingPolygon);
         }
-        final HashMap<String, TableInfo.Column> _columnsDETALLE = new HashMap<String, TableInfo.Column>(4);
-        _columnsDETALLE.put("uidDetalle", new TableInfo.Column("uidDetalle", "TEXT", true, 1));
-        _columnsDETALLE.put("uidCabecera", new TableInfo.Column("uidCabecera", "TEXT", true, 0));
-        _columnsDETALLE.put("latitud", new TableInfo.Column("latitud", "REAL", true, 0));
-        _columnsDETALLE.put("longitud", new TableInfo.Column("longitud", "REAL", true, 0));
-        final HashSet<TableInfo.ForeignKey> _foreignKeysDETALLE = new HashSet<TableInfo.ForeignKey>(0);
-        final HashSet<TableInfo.Index> _indicesDETALLE = new HashSet<TableInfo.Index>(0);
-        final TableInfo _infoDETALLE = new TableInfo("DETALLE", _columnsDETALLE, _foreignKeysDETALLE, _indicesDETALLE);
-        final TableInfo _existingDETALLE = TableInfo.read(_db, "DETALLE");
-        if (! _infoDETALLE.equals(_existingDETALLE)) {
-          throw new IllegalStateException("Migration didn't properly handle DETALLE(pe.minagri.googlemap.sql.Detalle).\n"
-                  + " Expected:\n" + _infoDETALLE + "\n"
-                  + " Found:\n" + _existingDETALLE);
+        final HashMap<String, TableInfo.Column> _columnsPoint = new HashMap<String, TableInfo.Column>(4);
+        _columnsPoint.put("uid", new TableInfo.Column("uid", "TEXT", true, 1));
+        _columnsPoint.put("uidPolygon", new TableInfo.Column("uidPolygon", "TEXT", true, 0));
+        _columnsPoint.put("latitude", new TableInfo.Column("latitude", "REAL", true, 0));
+        _columnsPoint.put("longitude", new TableInfo.Column("longitude", "REAL", true, 0));
+        final HashSet<TableInfo.ForeignKey> _foreignKeysPoint = new HashSet<TableInfo.ForeignKey>(0);
+        final HashSet<TableInfo.Index> _indicesPoint = new HashSet<TableInfo.Index>(0);
+        final TableInfo _infoPoint = new TableInfo("Point", _columnsPoint, _foreignKeysPoint, _indicesPoint);
+        final TableInfo _existingPoint = TableInfo.read(_db, "Point");
+        if (! _infoPoint.equals(_existingPoint)) {
+          throw new IllegalStateException("Migration didn't properly handle Point(pe.minagri.googlemap.sql.Point).\n"
+                  + " Expected:\n" + _infoPoint + "\n"
+                  + " Found:\n" + _existingPoint);
         }
       }
-    }, "1f410d3c217f48e26038de24f3820718", "ecc77cee9744cf294aa12878df08097a");
+    }, "921d7d41f24ce1c8af9e1f45c86b2133", "04b56c274d640819d341a7f406ff77fd");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)
@@ -103,7 +105,7 @@ public final class MapaDataBase_Impl extends MapaDataBase {
 
   @Override
   protected InvalidationTracker createInvalidationTracker() {
-    return new InvalidationTracker(this, "CABECERA","DETALLE");
+    return new InvalidationTracker(this, "Polygon","Point");
   }
 
   @Override
@@ -112,8 +114,8 @@ public final class MapaDataBase_Impl extends MapaDataBase {
     final SupportSQLiteDatabase _db = super.getOpenHelper().getWritableDatabase();
     try {
       super.beginTransaction();
-      _db.execSQL("DELETE FROM `CABECERA`");
-      _db.execSQL("DELETE FROM `DETALLE`");
+      _db.execSQL("DELETE FROM `Polygon`");
+      _db.execSQL("DELETE FROM `Point`");
       super.setTransactionSuccessful();
     } finally {
       super.endTransaction();
@@ -125,29 +127,29 @@ public final class MapaDataBase_Impl extends MapaDataBase {
   }
 
   @Override
-  public CabeceraDao getCabeceraDao() {
-    if (_cabeceraDao != null) {
-      return _cabeceraDao;
+  public PolygonDao getPolygonDao() {
+    if (_polygonDao != null) {
+      return _polygonDao;
     } else {
       synchronized(this) {
-        if(_cabeceraDao == null) {
-          _cabeceraDao = new CabeceraDao_Impl(this);
+        if(_polygonDao == null) {
+          _polygonDao = new PolygonDao_Impl(this);
         }
-        return _cabeceraDao;
+        return _polygonDao;
       }
     }
   }
 
   @Override
-  public DetalleDao getDetalleDao() {
-    if (_detalleDao != null) {
-      return _detalleDao;
+  public PointDao getPointDao() {
+    if (_pointDao != null) {
+      return _pointDao;
     } else {
       synchronized(this) {
-        if(_detalleDao == null) {
-          _detalleDao = new DetalleDao_Impl(this);
+        if(_pointDao == null) {
+          _pointDao = new PointDao_Impl(this);
         }
-        return _detalleDao;
+        return _pointDao;
       }
     }
   }

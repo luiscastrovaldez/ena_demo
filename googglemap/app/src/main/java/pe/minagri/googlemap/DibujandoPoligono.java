@@ -8,15 +8,14 @@ import android.widget.Toast;
 
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.Polygon;
 import com.google.android.gms.maps.model.PolygonOptions;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import pe.minagri.googlemap.sql.Cabecera;
-import pe.minagri.googlemap.sql.Detalle;
+import pe.minagri.googlemap.sql.Point;
+import pe.minagri.googlemap.sql.Polygon;
 import pe.minagri.googlemap.sql.database.ServiceDatabase;
 
 public class DibujandoPoligono extends AsyncTask<String, Void, Void> {
@@ -28,13 +27,15 @@ public class DibujandoPoligono extends AsyncTask<String, Void, Void> {
     private double areaTotal;
     private ServiceDatabase serviceDatabase;
     private GoogleMap mapa;
+    boolean isLote;
 
 
-    public DibujandoPoligono(Activity activity, List<LatLng> puntos, ServiceDatabase serviceDatabase, GoogleMap mapa) {
+    public DibujandoPoligono(Activity activity, List<LatLng> puntos, ServiceDatabase serviceDatabase, GoogleMap mapa, boolean isLote) {
         this.activity = activity;
         this.puntos = puntos;
         this.serviceDatabase = serviceDatabase;
         this.mapa = mapa;
+        this.isLote = isLote;
     }
 
     protected void onPreExecute() {
@@ -58,42 +59,53 @@ public class DibujandoPoligono extends AsyncTask<String, Void, Void> {
                         arrayTotal = new LatLng[puntos.size()];
                         puntos.toArray(arrayTotal);
                         areaTotal = PolygonUtils.computeArea(Arrays.asList(arrayTotal));
-
-                        Cabecera cabecera = new Cabecera();
-                        cabecera.setArea(areaTotal);
-                        cabecera.setTipoGrafico(args[0]);
-
-                        serviceDatabase.addCabecera(cabecera);
-                        Detalle detalle = null;
-                        for (LatLng punto : arrayTotal) {
-                            detalle = new Detalle();
-                            detalle.setLatitud(punto.latitude);
-                            detalle.setLongitud(punto.longitude);
-                            detalle.setUidCabecera(cabecera.getUid());
-                            serviceDatabase.addDetalle(detalle);
+                        int color = 0;
+                        Polygon polygon = null;
+                        if (args[1] != null) {
+                            polygon = serviceDatabase.getPolygon(args[1]);
+                        } else {
+                            polygon = new Polygon();
                         }
 
-                        int color = 0;
-
-                        if (Constants.LOTE.equals(args[0])) {
+                        polygon.setArea(areaTotal);
+                        polygon.setName(args[0]);
+                        if (isLote){
+                            polygon.setType("LOTE");
+                            polygon.setUidParent(null);
                             color = Color.GREEN;
                         } else {
+                            polygon.setType("PARCELA");
                             color = Color.RED;
                         }
 
 
+                        if (args[1] != null) {
+                            serviceDatabase.updatePolygon(polygon);
+                        } else {
+                            serviceDatabase.addPolygon(polygon);
+                        }
 
-                        Polygon polygon = mapa.addPolygon(new PolygonOptions()
+                        Point point = null;
+                        for (LatLng punto : arrayTotal) {
+                            point = new Point();
+                            point.setLatitude(punto.latitude);
+                            point.setLongitude(punto.longitude);
+                            point.setUidPolygon(polygon.getUid());
+                            serviceDatabase.addPoint(point);
+                        }
+
+                        com.google.android.gms.maps.model.Polygon polygonMap = mapa.addPolygon(new PolygonOptions()
                                 .add(arrayTotal)
                                 .strokeColor(color).strokeWidth(2)
                                 .fillColor(Color.TRANSPARENT));
-                        polygon.setClickable(true);
+                        polygonMap.setClickable(true);
                         puntos = new ArrayList<>();
 
 
                     } else if (puntos.size() != 0) {
                         Toast.makeText(activity.getApplicationContext(), "Debe tener al menos 3 puntos", Toast.LENGTH_SHORT).show();
                     }
+
                 }
 
             });

@@ -12,7 +12,10 @@ import android.content.res.AssetManager;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.github.clans.fab.FloatingActionButton;
@@ -50,13 +53,16 @@ public class MapsActivity extends FragmentActivity implements
     private List<LatLng> puntos;
     private List<LatLng> total;
 
+    private String idPolygon;
+    private String idPolygonParent;
+
 
     private static MarkerOptions posicionActualMarker;
 
 
     private static CameraPosition cameraPosition;
 
-    private FloatingActionButton actualPosicion, tipoMapa, dibujarPoligono, limpiar;
+    private FloatingActionButton actualPosicion, tipoMapa, limpiar;
 
     private ServiceDatabase serviceDatabase;
 
@@ -70,10 +76,19 @@ public class MapsActivity extends FragmentActivity implements
 
     private AssetManager assetManager;
 
+    private TextView area;
+    private EditText nombre;
+    private Button guardar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
+
+        area = (TextView)findViewById(R.id.area);
+        nombre = (EditText)findViewById(R.id.nombre);
+        guardar = (Button) findViewById(R.id.guardar);
+
         assetManager = getBaseContext().getAssets();
         if (ContextCompat.checkSelfPermission(MapsActivity.this,
                 Manifest.permission.WRITE_EXTERNAL_STORAGE)
@@ -93,6 +108,22 @@ public class MapsActivity extends FragmentActivity implements
             cargandoComponentes();
 
         }
+
+        guardar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (nombre.getText().toString() != null && !nombre.getText().toString().isEmpty()){
+                    if (puntos.size() != 0 && puntos.size() < 3) {
+                        Toast.makeText(getApplication(), "Debe tener al menos 3 puntos", Toast.LENGTH_SHORT).show();
+                    } else {
+                        cargadoInfoMapa(nombre.getText().toString());
+                        puntos = new ArrayList<>();
+                    }
+                } else {
+                    Toast.makeText(getApplicationContext(), "Campo Nombre es Obligatorio ", Toast.LENGTH_LONG).show();
+                }
+            }
+        });
 
     }
 
@@ -130,7 +161,7 @@ public class MapsActivity extends FragmentActivity implements
 
         actualPosicion = (FloatingActionButton) findViewById(R.id.actualPosicion);
         tipoMapa = (FloatingActionButton) findViewById(R.id.tipoMapa);
-        dibujarPoligono = (FloatingActionButton) findViewById(R.id.dibujarPoligono);
+
         limpiar = (FloatingActionButton) findViewById(R.id.limpiar);
 
         serviceDatabase = ServiceDatabase.get(this);
@@ -167,46 +198,6 @@ public class MapsActivity extends FragmentActivity implements
             }
         });
 
-        dibujarPoligono.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-
-                AlertDialog alertDialog = new AlertDialog.Builder(MapsActivity.this)
-                        .setIcon(android.R.drawable.ic_dialog_alert)
-                        .setTitle(Constants.TITULO_GENERANDO_POLIGONO)
-                        .setMessage(Constants.TITULO_GENERANDO_POLIGONO)
-
-                        .setPositiveButton(Constants.LOTE, new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialogInterface, int i) {
-
-                                if (puntos.size() != 0 && puntos.size() < 3) {
-                                    Toast.makeText(getApplication(), "Debe tener al menos 3 puntos", Toast.LENGTH_SHORT).show();
-                                } else {
-
-                                    cargadoInfoMapa(Constants.LOTE);
-                                    puntos = new ArrayList<>();
-
-                                }
-
-
-                            }
-                        }).setNegativeButton(Constants.PARCELA, new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialogInterface, int i) {
-
-                                if (puntos.size() != 0 && puntos.size() < 3) {
-                                    Toast.makeText(getApplication(), "Debe tener al menos 3 puntos", Toast.LENGTH_SHORT).show();
-                                } else {
-                                    cargadoInfoMapa(Constants.PARCELA);
-                                    puntos = new ArrayList<>();
-                                }
-
-                            }
-                        })
-                        .show();
-
-            }
-        });
 
         limpiar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -301,40 +292,14 @@ public class MapsActivity extends FragmentActivity implements
     @Override
     public void onPolygonClick(Polygon polygon) {
 
-        String area = polygon.getTag().toString().split("#")[0];
+        String areaPolygon = polygon.getTag().toString().split("#")[0];
         final String id = polygon.getTag().toString().split("#")[1];
-        final String tipo = polygon.getTag().toString().split("#")[2];
+        idPolygon = id;
+        pe.minagri.googlemap.sql.Polygon polygon1 = serviceDatabase.getPolygon(id);
 
-        AlertDialog alertDialog = new AlertDialog.Builder(MapsActivity.this)
-                .setIcon(android.R.drawable.ic_dialog_alert)
-                .setTitle("Area Total")
-                .setMessage("Area Calculada  " + tipo + " = " + area +  " \nDesea Eliminar el Poligono")
-
-                .setPositiveButton("Si", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        serviceDatabase.deleteDetalleByCabeceraId(id);
-                        serviceDatabase.deleteCabeceraById(id);
-
-                        /*
-
-                        CargandoPoligonos load2 = new CargandoPoligonos();
-                        load2.execute();
-
-                        GenerandoKml generandoKml = new GenerandoKml(kmls);
-                        generandoKml.execute();
-
-                        */
-
-
-                    }
-                }).setNegativeButton("No", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-
-                    }
-                })
-                .show();
+        final String nombrePolygon = polygon1.getName();
+        nombre.setText(nombrePolygon);
+        area.setText(areaPolygon);
 
     }
 
@@ -389,7 +354,7 @@ public class MapsActivity extends FragmentActivity implements
 
     }
 
-    private void cargadoInfoMapa(String tipo){
+    private void cargadoInfoMapa(String name){
 
         try {
             mapa.clear();
@@ -399,9 +364,9 @@ public class MapsActivity extends FragmentActivity implements
 
             Thread.sleep(1000);
 
-            if (tipo != null) {
-                dibujandoPoligono = new DibujandoPoligono(MapsActivity.this, puntos, serviceDatabase, mapa);
-                dibujandoPoligono.execute(tipo);
+            if (name != null) {
+                dibujandoPoligono = new DibujandoPoligono(MapsActivity.this, puntos, serviceDatabase, mapa, false);
+                dibujandoPoligono.execute(name,idPolygon);
             }
 
             Thread.sleep(1000);

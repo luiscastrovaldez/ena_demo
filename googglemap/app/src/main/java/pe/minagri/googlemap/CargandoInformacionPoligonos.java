@@ -7,7 +7,6 @@ import android.os.AsyncTask;
 
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.Polygon;
 import com.google.android.gms.maps.model.PolygonOptions;
 
 import java.io.InputStream;
@@ -15,8 +14,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import pe.minagri.googlemap.bean.CoordenadasBean;
-import pe.minagri.googlemap.sql.Cabecera;
-import pe.minagri.googlemap.sql.Detalle;
+import pe.minagri.googlemap.sql.Point;
+import pe.minagri.googlemap.sql.Polygon;
 import pe.minagri.googlemap.sql.database.ServiceDatabase;
 
 public class CargandoInformacionPoligonos extends AsyncTask<String, Integer, String> {
@@ -55,18 +54,18 @@ public class CargandoInformacionPoligonos extends AsyncTask<String, Integer, Str
         beans = new ArrayList<>();
         try {
 
-            List<Cabecera> cabeceras = serviceDatabase.getCabeceras();
-            List<Detalle> detalles = null;
+            List<Polygon> polygons = serviceDatabase.getPolygons();
+            List<Point> points = null;
             CoordenadasBean bean = null;
-            for (Cabecera cabecera : cabeceras) {
+            for (Polygon polygon : polygons) {
                 bean = new CoordenadasBean();
-                bean.setTipoGrafico(cabecera.getTipoGrafico());
-                bean.setId(cabecera.getUid());
-                bean.setArea(cabecera.getArea());
-                detalles = serviceDatabase.getDetallesByCabeceraId(cabecera.uid);
+                bean.setTipoGrafico(polygon.getType());
+                bean.setId(polygon.getUid());
+                bean.setArea(polygon.getArea());
+                points = serviceDatabase.getPointByPolygonId(polygon.getUid());
                 puntosCargar = new ArrayList<>();
-                for (Detalle detalle : detalles) {
-                    LatLng latLng = new LatLng(detalle.getLatitud(), detalle.getLongitud());
+                for (Point point : points) {
+                    LatLng latLng = new LatLng(point.getLatitude(), point.getLongitude());
                     puntosCargar.add(latLng);
                 }
                 arrayTotal = new LatLng[puntosCargar.size()];
@@ -104,7 +103,7 @@ public class CargandoInformacionPoligonos extends AsyncTask<String, Integer, Str
                     color = Color.RED;
                 }
 
-                Polygon polygon = mapa.addPolygon(new PolygonOptions()
+                com.google.android.gms.maps.model.Polygon polygon = mapa.addPolygon(new PolygonOptions()
                         .add(bean.getArrayTotal())
                         .strokeColor(color).strokeWidth(2)
                         .fillColor(Color.TRANSPARENT));

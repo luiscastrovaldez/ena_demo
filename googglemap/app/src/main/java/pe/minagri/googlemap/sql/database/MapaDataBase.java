@@ -3,14 +3,13 @@ package pe.minagri.googlemap.sql.database;
 import androidx.room.Database;
 import androidx.room.RoomDatabase;
 
-import pe.minagri.googlemap.sql.Cabecera;
-import pe.minagri.googlemap.sql.Detalle;
+import pe.minagri.googlemap.sql.Point;
+import pe.minagri.googlemap.sql.Polygon;
 
-@Database(entities = {Cabecera.class, Detalle.class}, version = 1)
+@Database(entities = {Polygon.class, Point.class}, version = 2)
 public abstract class MapaDataBase extends RoomDatabase {
 
-    public abstract CabeceraDao getCabeceraDao();
-    public abstract DetalleDao getDetalleDao();
-
+    public abstract PolygonDao getPolygonDao();
+    public abstract PointDao getPointDao();
 
 }
