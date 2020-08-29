@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:fab="http://schemas.android.com/apk/res-auto"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    >
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CEE8B0">
 
-
-    <LinearLayout
-        android:id="@+id/linear1"
-        android:layout_gravity="center"
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="match_parent"
+        android:background="#CEE8B0"
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
 
-        <GridLayout
-            android:layout_width="match_parent"
+
+        <!-- Row 1 with single column -->
+        <TableRow
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:columnCount="3"
-            android:rowCount="2">
+            android:gravity="center_horizontal">
 
             <CheckBox
                 android:id="@+id/campoMarte"
@@ -26,7 +26,7 @@
                 android:onClick="onCheckboxClicked"
                 android:text="Muestra Campo Marte"
                 android:textColor="@color/black"
-                android:textSize="20sp" />
+                android:textSize="18sp" />
 
             <CheckBox
                 android:id="@+id/smEnaBeSM"
@@ -35,8 +35,8 @@
                 android:layout_below="@+id/checkbox1"
                 android:onClick="onCheckboxClicked"
                 android:text="SM Ena"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
+                android:textColor="#000"
+                android:textSize="18sp" />
 
             <CheckBox
                 android:id="@+id/smEnaViru"
@@ -45,8 +45,8 @@
                 android:layout_below="@+id/checkbox2"
                 android:onClick="onCheckboxClicked"
                 android:text="SM Ena Viru"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
+                android:textColor="#000"
+                android:textSize="18sp" />
 
             <CheckBox
                 android:id="@+id/isLote"
@@ -54,99 +54,120 @@
                 android:layout_height="wrap_content"
                 android:onClick="onCheckboxClicked"
                 android:text="Marcar si es Lote"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <!-- Row 2 with 3 columns -->
 
 
-        </GridLayout>
-
-        <LinearLayout
-            android:layout_height="match_parent"
+        <TableRow
+            android:id="@+id/tableRow1"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-            android:layout_gravity="center"
-            android:id="@+id/linear3">
-
-            <TextView
+            <Spinner
+                android:id="@+id/parcelas"
                 android:layout_width="wrap_content"
-                android:text="Area:               "
                 android:layout_height="wrap_content" />
+
             <TextView
-                android:layout_width="wrap_content"
                 android:id="@+id/area"
-                android:layout_height="wrap_content" />
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:text="              Nombre:            "
-                android:layout_height="wrap_content" />
-
-            <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/nombre"/>
+                android:gravity="center_horizontal"
+                android:hint="Area de la Parcela"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/nombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:hint="Nombre de la Parcela"
+                android:textAlignment="center" />
+
+        </TableRow>
 
 
-
-
-        </LinearLayout>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:text="Guardar Informacion"
-            android:textColor="@color/white"
-            android:id="@+id/guardar"
-            android:layout_height="wrap_content" />
-
-
-    </LinearLayout>
-
-
-
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:id="@+id/linear2"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/linear1">
-
-
-
-        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:map="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:id="@+id/map"
-            android:name="com.google.android.gms.maps.SupportMapFragment"
+        <TableRow
+            android:id="@+id/tableRow2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:context=".MapsActivity" />
-    </LinearLayout>
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/lotes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/areaLote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:hint="Area del Lote"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/nombreLote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:hint="Nombre del Lote"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/guardar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/custom_rounded_corners"
+                android:gravity="center"
+                android:padding="10dip"
+                android:text="Guardar Informacion"
+                android:textColor="@color/white" />
+        </TableRow>
+        <!-- Row 3 with 2 columns -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span="5"
+                tools:context=".MapsActivity" />
+
+
+        </TableRow>
+
+    </TableLayout>
 
     <com.github.clans.fab.FloatingActionMenu
         android:id="@+id/material_design_android_floating_action_menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_marginBottom="11dp"
+        android:layout_alignParentBottom="true"
         android:layout_marginLeft="11dp"
         android:layout_marginRight="11dp"
+        android:layout_marginBottom="11dp"
         fab:menu_animationDelayPerItem="55"
         fab:menu_backgroundColor="@android:color/transparent"
         fab:menu_buttonSpacing="0dp"
-        fab:menu_colorNormal="#da3c2f"
-        fab:menu_colorPressed="#dc4b3f"
-        fab:menu_colorRipple="#99d4d4d4"
+        fab:menu_colorNormal="#667076"
+        fab:menu_colorPressed="#667076"
+        fab:menu_colorRipple="#667076"
         fab:menu_fab_label="Menu"
         fab:menu_fab_size="normal"
         fab:menu_icon="@drawable/fab_add"
-        fab:menu_labels_colorNormal="#333"
-        fab:menu_labels_colorPressed="#444"
-        fab:menu_labels_colorRipple="#66efecec"
+        fab:menu_labels_colorNormal="#667076"
+        fab:menu_labels_colorPressed="#667076"
+        fab:menu_labels_colorRipple="#667076"
         fab:menu_labels_cornerRadius="3dp"
         fab:menu_labels_ellipsize="none"
         fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
@@ -173,15 +194,10 @@
             android:layout_height="wrap_content"
             android:src="@drawable/ic_gps_fixed_black_24dp"
             fab:fab_label="Posicion Actual"
-            fab:fab_size="mini" />
-
-        <com.github.clans.fab.FloatingActionButton
-            android:id="@+id/dibujarPoligono"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_format_shapes_black_24dp"
-            fab:fab_label="Dibujar Poligono"
-            fab:fab_size="mini" />
+            fab:fab_size="mini"
+            fab:menu_colorNormal="#667076"
+            fab:menu_colorPressed="#667076"
+            fab:menu_colorRipple="#667076" />
 
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/tipoMapa"
@@ -189,7 +205,10 @@
             android:layout_height="wrap_content"
             android:src="@drawable/ic_satellite_black_24dp"
             fab:fab_label="Tipo Mapa"
-            fab:fab_size="mini" />
+            fab:fab_size="mini"
+            fab:menu_colorNormal="#667076"
+            fab:menu_colorPressed="#667076"
+            fab:menu_colorRipple="#667076" />
 
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/limpiar"
@@ -197,12 +216,12 @@
             android:layout_height="wrap_content"
             android:src="@drawable/ic_clear_black_24dp"
             fab:fab_label="Limpiar Mapa"
-            fab:fab_size="mini" />
+            fab:fab_size="mini"
+            fab:menu_colorNormal="#667076"
+            fab:menu_colorPressed="#667076"
+            fab:menu_colorRipple="#667076" />
 
 
     </com.github.clans.fab.FloatingActionMenu>
-
-
-
 
 </RelativeLayout>

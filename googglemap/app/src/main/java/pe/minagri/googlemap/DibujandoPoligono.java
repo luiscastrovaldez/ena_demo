@@ -9,6 +9,8 @@ import android.widget.Toast;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.PolygonOptions;
+import com.google.android.gms.maps.model.Polyline;
+import com.google.android.gms.maps.model.PolylineOptions;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -75,7 +77,7 @@ public class DibujandoPoligono extends AsyncTask<String, Void, Void> {
                             color = Color.GREEN;
                         } else {
                             polygon.setType("PARCELA");
-                            color = Color.RED;
+                            color = Color.BLUE;
                         }
 
 
@@ -94,11 +96,19 @@ public class DibujandoPoligono extends AsyncTask<String, Void, Void> {
                             serviceDatabase.addPoint(point);
                         }
 
+                        /*
                         com.google.android.gms.maps.model.Polygon polygonMap = mapa.addPolygon(new PolygonOptions()
                                 .add(arrayTotal)
                                 .strokeColor(color).strokeWidth(2)
                                 .fillColor(Color.TRANSPARENT));
                         polygonMap.setClickable(true);
+                        */
+
+                        Polyline line = mapa.addPolyline(new PolylineOptions()
+                                .add(arrayTotal)
+                                .width(5)
+                                .color(color));
+
                         puntos = new ArrayList<>();
 
 

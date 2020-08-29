@@ -10,19 +10,6 @@ import java.io.File;
 
 public final class Constants {
 
-    private Constants(){
-
-    }
-
-    public static final String PATH_MINAGRI = Environment.getExternalStorageDirectory() + File.separator + "enamap";
-    public static final String PATH_MINAGRI_KML = PATH_MINAGRI + File.separator + "kml";
-    public static final String PATH_MINAGRI_DB = PATH_MINAGRI + File.separator + "db";
-
-    public static final int WRITE_EXTERNAL_STORAGE_REQUEST_CODE = 1;
-    public static final int GPS_STORAGE_REQUEST_CODE = 2;
-
-    public static final int PERMISSION_ALL = 1;
-
     public static final String[] PERMISSIONS = {
             Manifest.permission.ACCESS_FINE_LOCATION,
             Manifest.permission.ACCESS_COARSE_LOCATION,
@@ -34,10 +21,13 @@ public final class Constants {
 
     };
 
+    public static final String PATH_MINAGRI_MAIN_FOLDER = Environment.getExternalStorageDirectory() + File.separator + "enamap";
+    public static final String PATH_MINAGRI_DB_FOLDER = PATH_MINAGRI_MAIN_FOLDER + File.separator + "db";
 
-    public static final LatLng UPV = new LatLng(-12.063403, -77.039376);
+    public static final int WRITE_EXTERNAL_STORAGE_REQUEST_CODE = 1;
+    public static final int GPS_STORAGE_REQUEST_CODE = 2;
 
-    public static final String MINAGRI = "Minagri";
+    public static final int PERMISSION_ALL = 1;
 
     public static final String TITULO_GENERANDO_POLIGONO = "Dibujando Poligono...";
     public static final String OBTENIENDO_INFORMACION_POLIGONO = "Obteniendo Informacion...";
@@ -50,6 +40,7 @@ public final class Constants {
     public static final String MUESTRA_CAMPO_MARTE_KML = "MUESTRA_CAMPO_MARTE.kml";
     public static final String SM_ENA_BE_SM_KML = "SM_ENA_BE_SM.kml";
     public static final String SM_ENA_VIRU_KML = "SM_ENA_VIRU.kml";
+
 
 
 

@@ -12,14 +12,16 @@ import android.content.res.AssetManager;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.github.clans.fab.FloatingActionButton;
-import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
@@ -27,7 +29,6 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.google.android.gms.maps.model.Polygon;
 import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
 
@@ -38,10 +39,11 @@ import java.util.List;
 
 
 import pe.minagri.googlemap.kml.ParsingStructure;
+import pe.minagri.googlemap.sql.Point;
 import pe.minagri.googlemap.sql.database.ServiceDatabase;
 
 public class MapsActivity extends FragmentActivity implements
-        OnMapReadyCallback, GoogleMap.OnMapClickListener, GoogleMap.OnMapLongClickListener, GoogleMap.OnPolygonClickListener {
+        OnMapReadyCallback, GoogleMap.OnMapClickListener , AdapterView.OnItemSelectedListener {
 
     private GoogleMap mapa;
 
@@ -56,17 +58,13 @@ public class MapsActivity extends FragmentActivity implements
     private String idPolygon;
     private String idPolygonParent;
 
-
-    private static MarkerOptions posicionActualMarker;
-
-
     private static CameraPosition cameraPosition;
 
     private FloatingActionButton actualPosicion, tipoMapa, limpiar;
 
     private ServiceDatabase serviceDatabase;
 
-    private static List<String> kmls;
+    private List<String> kmls;
 
 
     private static List<LatLng> points;
@@ -79,36 +77,59 @@ public class MapsActivity extends FragmentActivity implements
     private TextView area;
     private EditText nombre;
     private Button guardar;
+    private Spinner parcelas,lotes;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_maps);
+    void cargarInformacionParcelas(){
+        List<Combo> list = new ArrayList<>();
+        list.add(new Combo("0","Seleccionar Parcela"));
+        List<pe.minagri.googlemap.sql.Polygon> polygons = serviceDatabase.getPolygons();
+        for (pe.minagri.googlemap.sql.Polygon polygon : polygons) {
+            list.add(new Combo(polygon.getUid(),polygon.getName()));
+        }
 
+        ArrayAdapter<Combo> dataAdapter = new ArrayAdapter<Combo>(this,
+                android.R.layout.simple_spinner_item, list);
+
+        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        parcelas.setAdapter(dataAdapter);
+        dataAdapter.notifyDataSetChanged();
+    }
+
+    void cargarInformacionLotes(){
+        List<Combo> list = new ArrayList<>();
+        list.add(new Combo("0","Seleccionar Lote  "));
+        /*
+        List<pe.minagri.googlemap.sql.Polygon> polygons = serviceDatabase.getPolygons();
+        for (pe.minagri.googlemap.sql.Polygon polygon : polygons) {
+            list.add(new Combo(polygon.getUid(),polygon.getName()));
+        }
+        */
+        ArrayAdapter<Combo> dataAdapter = new ArrayAdapter<Combo>(this,
+                android.R.layout.simple_spinner_item, list);
+
+        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        lotes.setAdapter(dataAdapter);
+        dataAdapter.notifyDataSetChanged();
+
+    }
+
+    void iniciandoObjetos() throws Exception{
         area = (TextView)findViewById(R.id.area);
         nombre = (EditText)findViewById(R.id.nombre);
         guardar = (Button) findViewById(R.id.guardar);
-
         assetManager = getBaseContext().getAssets();
-        if (ContextCompat.checkSelfPermission(MapsActivity.this,
-                Manifest.permission.WRITE_EXTERNAL_STORAGE)
-                != PackageManager.PERMISSION_GRANTED) {
+        actualPosicion = (FloatingActionButton) findViewById(R.id.actualPosicion);
+        tipoMapa = (FloatingActionButton) findViewById(R.id.tipoMapa);
+        limpiar = (FloatingActionButton) findViewById(R.id.limpiar);
+        serviceDatabase = ServiceDatabase.get(this);
+        kmls = new ArrayList<String>();
+        puntos = new ArrayList<>();
+        parcelas = (Spinner) findViewById(R.id.parcelas);
+        parcelas.setOnItemSelectedListener(this);
+        lotes = (Spinner) findViewById(R.id.lotes);
 
-            if (ActivityCompat.shouldShowRequestPermissionRationale(MapsActivity.this,
-                    Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
-
-            } else {
-
-                ActivityCompat.requestPermissions(MapsActivity.this,
-                        new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
-                        Constants.WRITE_EXTERNAL_STORAGE_REQUEST_CODE);
-
-            }
-        } else {
-            cargandoComponentes();
-
-        }
-
+    }
+    void botonesMenu() throws Exception{
         guardar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -116,8 +137,37 @@ public class MapsActivity extends FragmentActivity implements
                     if (puntos.size() != 0 && puntos.size() < 3) {
                         Toast.makeText(getApplication(), "Debe tener al menos 3 puntos", Toast.LENGTH_SHORT).show();
                     } else {
-                        cargadoInfoMapa(nombre.getText().toString());
-                        puntos = new ArrayList<>();
+
+                        AlertDialog alertDialog = new AlertDialog.Builder(MapsActivity.this)
+                                .setIcon(android.R.drawable.ic_dialog_alert)
+                                .setTitle("Confirmacion")
+                                .setMessage("¿ Desea guardar la Informacion ?")
+
+                                .setPositiveButton("Si", new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialogInterface, int i) {
+
+
+                                        try {
+                                            cargadoInfoMapa(nombre.getText().toString(),idPolygon);
+                                            puntos = new ArrayList<>();
+
+                                        } catch ( Exception e ){
+                                            e.printStackTrace();
+                                            Toast.makeText(MapsActivity.this,
+                                                    "Error al guardar la informacion " + e.getMessage(),
+                                                    Toast.LENGTH_SHORT).show();
+                                        }
+
+
+                                    }
+                                }).setNegativeButton("No", new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialogInterface, int i) {
+
+                                    }
+                                })
+                                .show();
                     }
                 } else {
                     Toast.makeText(getApplicationContext(), "Campo Nombre es Obligatorio ", Toast.LENGTH_LONG).show();
@@ -125,87 +175,35 @@ public class MapsActivity extends FragmentActivity implements
             }
         });
 
-    }
-
-    private void creaandoFolders(){
-        File mediaStorageDir = new File(Constants.PATH_MINAGRI);
-        String csvFile = mediaStorageDir.getAbsolutePath() + File.separator;
-
-        if (!mediaStorageDir.exists()) {
-            if (!mediaStorageDir.mkdirs()) {
-                Toast.makeText(getApplicationContext(), "Error al crear la carpeta del minagri ", Toast.LENGTH_LONG).show();
-                return;
-            }
-        }
-
-        mediaStorageDir = new File(Constants.PATH_MINAGRI_DB);
-        csvFile = mediaStorageDir.getAbsolutePath() + File.separator;
-
-        if (!mediaStorageDir.exists()) {
-            if (!mediaStorageDir.mkdirs()) {
-                Toast.makeText(getApplicationContext(), "Error al crear la carpeta db ", Toast.LENGTH_LONG).show();
-                return;
-            }
-        }
-
-    }
-
-    private void cargandoComponentes() {
-
-        creaandoFolders();
-
-        SupportMapFragment mapFragment = (SupportMapFragment)
-                getSupportFragmentManager().findFragmentById(R.id.map);
-        mapFragment.getMapAsync(this);
-        puntos = new ArrayList<LatLng>();
-
-        actualPosicion = (FloatingActionButton) findViewById(R.id.actualPosicion);
-        tipoMapa = (FloatingActionButton) findViewById(R.id.tipoMapa);
-
-        limpiar = (FloatingActionButton) findViewById(R.id.limpiar);
-
-        serviceDatabase = ServiceDatabase.get(this);
-
-        kmls = new ArrayList<String>();
-
-
-        puntosTotales = new ArrayList<List<LatLng>>();
-
         actualPosicion.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-
                 if (ContextCompat.checkSelfPermission(MapsActivity.this,
                         Manifest.permission.ACCESS_FINE_LOCATION)
                         != PackageManager.PERMISSION_GRANTED) {
 
-                    if (ActivityCompat.shouldShowRequestPermissionRationale(MapsActivity.this,
-                            Manifest.permission.ACCESS_FINE_LOCATION)) {
-
-                    } else {
-
-                        ActivityCompat.requestPermissions(MapsActivity.this,
-                                new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
-                                Constants.GPS_STORAGE_REQUEST_CODE);
-
-                    }
+                    ActivityCompat.requestPermissions(MapsActivity.this,
+                            new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
+                            Constants.GPS_STORAGE_REQUEST_CODE);
                 } else {
                     // Permission has already been granted
                     ubicacionActual = new UbicacionActual(MapsActivity.this, mapa);
                     ubicacionActual.execute();
                 }
-
-
             }
         });
-
 
         limpiar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 mapa.clear();
                 puntos = new ArrayList<LatLng>();
+                try {
+                    cargadoInfoMapa(null, null);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    Toast.makeText(getApplicationContext(), "Error al cargar la informacion ", Toast.LENGTH_LONG).show();
+                }
             }
         });
-
 
         tipoMapa.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -219,6 +217,104 @@ public class MapsActivity extends FragmentActivity implements
 
     }
 
+    void solicitarPermisosCarpetas() throws Exception{
+        if (ContextCompat.checkSelfPermission(MapsActivity.this,
+                Manifest.permission.WRITE_EXTERNAL_STORAGE)
+                != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(MapsActivity.this,
+                    new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
+                    Constants.WRITE_EXTERNAL_STORAGE_REQUEST_CODE);
+        } else {
+            crearCarpetas();
+        }
+    }
+
+    void solicitarPermisoMapa(){
+        if (ContextCompat.checkSelfPermission(MapsActivity.this,
+                Manifest.permission.ACCESS_FINE_LOCATION)
+                != PackageManager.PERMISSION_GRANTED) {
+
+            ActivityCompat.requestPermissions(MapsActivity.this,
+                    new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
+                    Constants.GPS_STORAGE_REQUEST_CODE);
+        } else {
+            // Permission has already been granted
+            cargandoMapa();
+        }
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_maps);
+        try {
+            iniciandoObjetos();
+            botonesMenu();
+            solicitarPermisosCarpetas();
+            solicitarPermisoMapa();
+            cargarInformacionParcelas();
+            cargarInformacionLotes();
+        } catch (Exception e) {
+            e.printStackTrace();
+            Toast.makeText(getApplicationContext(), "Error al crear la carpeta db ", Toast.LENGTH_LONG).show();
+        }
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> arg0, View arg1, int position, long id) {
+        Combo combo = (Combo) parcelas.getSelectedItem();
+        if (combo != null) {
+            pe.minagri.googlemap.sql.Polygon poligono  = serviceDatabase.getPolygon(combo.getId());
+            if (poligono != null){
+                nombre.setText(poligono.getName());
+                area.setText(poligono.getArea().toString());
+                idPolygon = poligono.getUid();
+                List<Point> points = serviceDatabase.getPointByPolygonId(poligono.getUid());
+                puntos = new ArrayList<>();
+                for (Point point : points) {
+                    LatLng latLng = new LatLng(point.getLatitude(), point.getLongitude());
+                    puntos.add(latLng);
+                }
+
+
+            }
+        }
+
+        //Toast.makeText(getApplicationContext(),combo.getId() , Toast.LENGTH_LONG).show();
+    }
+    @Override
+    public void onNothingSelected(AdapterView<?> arg0) {
+        // TODO Auto-generated method stub
+    }
+
+    private void crearCarpetas() throws Exception {
+        File mediaStorageDir = new File(Constants.PATH_MINAGRI_MAIN_FOLDER);
+
+        if (!mediaStorageDir.exists()) {
+            if (!mediaStorageDir.mkdirs()) {
+                Toast.makeText(getApplicationContext(), "Error al crear la carpeta enamap ", Toast.LENGTH_LONG).show();
+                return;
+            }
+        }
+
+        mediaStorageDir = new File(Constants.PATH_MINAGRI_DB_FOLDER);
+
+        if (!mediaStorageDir.exists()) {
+            if (!mediaStorageDir.mkdirs()) {
+                Toast.makeText(getApplicationContext(), "Error al crear la carpeta db ", Toast.LENGTH_LONG).show();
+                return;
+            }
+        }
+    }
+
+    private void cargandoMapa() {
+
+        SupportMapFragment mapFragment = (SupportMapFragment)
+                getSupportFragmentManager().findFragmentById(R.id.map);
+        mapFragment.getMapAsync(this);
+
+    }
+
 
 
     @Override
@@ -226,25 +322,14 @@ public class MapsActivity extends FragmentActivity implements
         mapa = googleMap;
         mapa.setMapType(GoogleMap.MAP_TYPE_NORMAL);
         mapa.getUiSettings().setZoomControlsEnabled(false);
-        mapa.moveCamera(CameraUpdateFactory.newLatLngZoom(Constants.UPV, 15));
-
-        mapa.addMarker(new MarkerOptions()
-                .position(Constants.UPV)
-                .title(Constants.MINAGRI)
-                .snippet(Constants.MINAGRI)
-                .icon(BitmapDescriptorFactory
-                        .defaultMarker(BitmapDescriptorFactory.HUE_YELLOW))
-                .anchor(0.5f, 0.5f));
         mapa.setOnMapClickListener(this);
-        mapa.setOnPolygonClickListener(this);
-        if (ActivityCompat.checkSelfPermission(this,
-                android.Manifest.permission.ACCESS_FINE_LOCATION) ==
-                PackageManager.PERMISSION_GRANTED) {
-            //mapa.setMyLocationEnabled(true);
-            mapa.getUiSettings().setCompassEnabled(true);
+        //mapa.setOnPolygonClickListener(this);
+        try {
+            cargadoInfoMapa(null, null);
+        } catch (Exception e) {
+            e.printStackTrace();
+            Toast.makeText(getApplicationContext(), "Error Cargando Informacion", Toast.LENGTH_LONG).show();
         }
-
-        cargadoInfoMapa(null);
     }
 
     @Override
@@ -253,7 +338,7 @@ public class MapsActivity extends FragmentActivity implements
 
         mapa.addMarker(new MarkerOptions()
                 .position(puntoPulsado)
-                .title("Latitud/Longitud")
+                .title("Nuevo Punto")
                 .snippet("Latitud/Longitud " + puntoPulsado.latitude + "/" + puntoPulsado.longitude)
                 .icon(BitmapDescriptorFactory
                         .fromResource(android.R.drawable.ic_menu_myplaces))
@@ -261,6 +346,8 @@ public class MapsActivity extends FragmentActivity implements
 
         puntos.add(puntoPulsado);
         graficarLinea(puntos);
+        nombre.setText("");
+        area.setText("");
 
     }
 
@@ -271,43 +358,13 @@ public class MapsActivity extends FragmentActivity implements
             Polyline line = mapa.addPolyline(new PolylineOptions()
                     .add(array)
                     .width(5)
-                    .color(Color.YELLOW));
+                    .color(Color.BLACK));
         }
     }
 
-
-    @Override
-    public void onMapLongClick(LatLng latLng) {
-        mapa.addMarker(new MarkerOptions()
-                .position(latLng)
-                .title("UPV")
-                .snippet("Latitud/Longitud " + latLng.latitude + "/" + latLng.longitude)
-                .icon(BitmapDescriptorFactory
-                        .defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
-
-    }
-
-
-
-    @Override
-    public void onPolygonClick(Polygon polygon) {
-
-        String areaPolygon = polygon.getTag().toString().split("#")[0];
-        final String id = polygon.getTag().toString().split("#")[1];
-        idPolygon = id;
-        pe.minagri.googlemap.sql.Polygon polygon1 = serviceDatabase.getPolygon(id);
-
-        final String nombrePolygon = polygon1.getName();
-        nombre.setText(nombrePolygon);
-        area.setText(areaPolygon);
-
-    }
-
-
-    public void onCheckboxClicked(View view) {
+    public void onCheckboxClicked(View view) throws Exception {
 
         boolean checked = ((CheckBox) view).isChecked();
-
 
         int index = 0;
         switch (view.getId()) {
@@ -350,11 +407,11 @@ public class MapsActivity extends FragmentActivity implements
         }
 
 
-        cargadoInfoMapa(null);
+        cargadoInfoMapa(null,null);
 
     }
 
-    private void cargadoInfoMapa(String name){
+    private void cargadoInfoMapa(String name, String id) throws Exception {
 
         try {
             mapa.clear();
@@ -366,14 +423,15 @@ public class MapsActivity extends FragmentActivity implements
 
             if (name != null) {
                 dibujandoPoligono = new DibujandoPoligono(MapsActivity.this, puntos, serviceDatabase, mapa, false);
-                dibujandoPoligono.execute(name,idPolygon);
+                dibujandoPoligono.execute(name,id);
             }
 
             Thread.sleep(1000);
             cargandoInformacionPoligonos = new CargandoInformacionPoligonos(MapsActivity.this, serviceDatabase, mapa);
             cargandoInformacionPoligonos.execute();
-        } catch (Exception e ){
 
+        } catch (Exception e ){
+            Toast.makeText(getApplicationContext(), "Error Cargando Informacion", Toast.LENGTH_LONG).show();
         }
 
     }
@@ -383,7 +441,11 @@ public class MapsActivity extends FragmentActivity implements
     protected void onRestart() {
         super.onRestart();
 
-        cargadoInfoMapa(null);
+        try {
+            cargadoInfoMapa(null, null);
+        } catch (Exception e) {
+            Toast.makeText(getApplicationContext(), "Error Cargando Informacion", Toast.LENGTH_LONG).show();
+        }
 
     }
 
@@ -396,7 +458,16 @@ public class MapsActivity extends FragmentActivity implements
                 if (grantResults.length > 0
                         && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
 
-                    cargandoComponentes();
+                    try {
+                        crearCarpetas();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                        try {
+                            throw e;
+                        } catch (Exception ex) {
+                            ex.printStackTrace();
+                        }
+                    }
 
                 } else {
                     // permission denied, boo! Disable the
@@ -408,7 +479,7 @@ public class MapsActivity extends FragmentActivity implements
                 // If request is cancelled, the result arrays are empty.
                 if (grantResults.length > 0
                         && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-
+                    cargandoMapa();
                 } else {
                     // permission denied, boo! Disable the
                     // functionality that depends on this permission.

@@ -8,6 +8,8 @@ import android.os.AsyncTask;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.PolygonOptions;
+import com.google.android.gms.maps.model.Polyline;
+import com.google.android.gms.maps.model.PolylineOptions;
 
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -100,19 +102,30 @@ public class CargandoInformacionPoligonos extends AsyncTask<String, Integer, Str
                 if (bean.tipoGrafico.equals(Constants.LOTE)) {
                     color = Color.GREEN;
                 } else {
-                    color = Color.RED;
+                    color = Color.BLUE;
                 }
 
+                /*
                 com.google.android.gms.maps.model.Polygon polygon = mapa.addPolygon(new PolygonOptions()
                         .add(bean.getArrayTotal())
                         .strokeColor(color).strokeWidth(2)
                         .fillColor(Color.TRANSPARENT));
                 polygon.setClickable(true);
-                polygon.setTag(bean.getArea() + "#" + bean.getId() + "#" + bean.getTipoGrafico());
+
+                */
+
+
+                Polyline line = mapa.addPolyline(new PolylineOptions()
+                        .add(bean.getArrayTotal())
+                        .width(5)
+                        .color(color));
+
+                //polygon.setTag(bean.getArea() + "#" + bean.getId() + "#" + bean.getTipoGrafico());
             }
         }
 
         if (mProgressDialog.isShowing()) {
+            ((MapsActivity)activity).cargarInformacionParcelas();
             mProgressDialog.dismiss();
         }
     }

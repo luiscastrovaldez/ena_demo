@@ -69,7 +69,7 @@ public class UbicacionActual extends AsyncTask<String, Void, Void> {
         posicionActualMarker = new MarkerOptions().position(new LatLng(latitude, longitude));
         String title = "Actual Posicion " + " Lat: " + latitude + " Long: " + longitude;
         posicionActualMarker.title(title);
-        posicionActualMarker.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_CYAN));
+        posicionActualMarker.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE));
 
         mapa.addMarker(posicionActualMarker);
 
@@ -81,14 +81,14 @@ public class UbicacionActual extends AsyncTask<String, Void, Void> {
     private void cameraProperties(LatLng latLng) {
 
         if (latLng != null) {
-            cameraPosition = new CameraPosition.Builder().target(latLng).zoom(15).build();
+            cameraPosition = new CameraPosition.Builder().target(latLng).zoom(18).build();
             mapa.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
             mapa.getUiSettings().setIndoorLevelPickerEnabled(true);
-            mapa.getUiSettings().setZoomControlsEnabled(true);
+            mapa.getUiSettings().setZoomControlsEnabled(false);
             mapa.getUiSettings().setRotateGesturesEnabled(true);
             mapa.getUiSettings().setZoomGesturesEnabled(true);
-            mapa.getUiSettings().setCompassEnabled(true);
-            mapa.getUiSettings().setMapToolbarEnabled(true);
+            mapa.getUiSettings().setCompassEnabled(false);
+            mapa.getUiSettings().setMapToolbarEnabled(false);
         }
 
     }

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:2:1-48:12
-INJECTED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:2:1-48:12
-INJECTED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:2:1-48:12
-INJECTED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:2:1-48:12
+ADDED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:2:1-41:12
 MERGED from [androidx.navigation:navigation-ui:2.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\c968d98bc843f5f5ecd004ecc1ea62b3\navigation-ui-2.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\bcaf2f38bd0e6ffe04a17e5f685cbed4\material-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\ac578dd963fa0e8b00d9521c2822ad2e\appcompat-1.0.2\AndroidManifest.xml:17:1-22:12
@@ -51,20 +51,20 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\US
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\552d05fff7df0b1caee9db39c74659fe\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\3f5e37635a712470204c0315e55f1003\lifecycle-runtime-2.1.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\8a52da53b02a83b08615debb9b2e109c\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:2:1-48:12
-INJECTED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:2:1-48:12
-INJECTED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:2:1-41:12
 	package
 		ADDED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:3:5-35
 		INJECTED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml
 		INJECTED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml
-		ADDED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:2:1-48:12
+		ADDED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:2:1-41:12
 		INJECTED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml
-		ADDED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:2:1-48:12
+		ADDED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:2:1-41:12
 		INJECTED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:2:11-69
@@ -91,7 +91,7 @@ ADDED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\ap
 	android:name
 		ADDED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:13:22-77
 application
-ADDED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:15:5-46:19
+ADDED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:15:5-39:19
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\bcaf2f38bd0e6ffe04a17e5f685cbed4\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\bcaf2f38bd0e6ffe04a17e5f685cbed4\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\c6130bfd518d6fb3467e7c67098ab157\jetified-play-services-maps-16.1.0\AndroidManifest.xml:30:5-36:19
@@ -110,6 +110,8 @@ MERGED from [androidx.core:core:1.1.0] C:\Users\USER\.gradle\caches\transforms-2
 MERGED from [androidx.core:core:1.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\03736cf4bc3669a69d502627b70a527e\core-1.1.0\AndroidManifest.xml:24:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\3c1a5ebf565097fe10667d6b9a2c1703\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\3c1a5ebf565097fe10667d6b9a2c1703\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+	android:requestLegacyExternalStorage
+		ADDED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:21:9-52
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\03736cf4bc3669a69d502627b70a527e\core-1.1.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
@@ -123,37 +125,29 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\US
 	android:allowBackup
 		ADDED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:16:9-35
 	android:theme
-		ADDED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:21:9-40
-activity#pe.minagri.googlemap.MainActivity
-ADDED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:22:9-29:20
-	android:label
-		ADDED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:24:13-56
-	android:theme
-		ADDED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:25:13-56
-	android:name
-		ADDED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:23:13-41
+		ADDED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:22:9-40
 meta-data#com.google.android.geo.API_KEY
-ADDED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:31:9-33:55
+ADDED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:24:9-26:55
 	android:value
-		ADDED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:33:13-52
+		ADDED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:26:13-52
 	android:name
-		ADDED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:32:13-58
+		ADDED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:25:13-58
 activity#pe.minagri.googlemap.MapsActivity
-ADDED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:35:9-45:20
+ADDED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:28:9-38:20
 	android:label
-		ADDED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:37:13-56
+		ADDED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:30:13-56
 	android:name
-		ADDED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:36:13-41
+		ADDED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:29:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:39:13-43:29
+ADDED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:32:13-36:29
 action#android.intent.action.MAIN
-ADDED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:40:17-69
+ADDED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:33:17-69
 	android:name
-		ADDED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:40:25-66
+		ADDED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:33:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:42:17-77
+ADDED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:35:17-77
 	android:name
-		ADDED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:42:27-74
+		ADDED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml:35:27-74
 uses-sdk
 INJECTED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\proyectos\minagri\workspace\workspaceEnaMap\ena_demo\googglemap\app\src\main\AndroidManifest.xml

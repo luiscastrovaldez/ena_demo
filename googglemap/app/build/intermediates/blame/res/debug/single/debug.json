@@ -32,6 +32,10 @@
         "source": "D:\\proyectos\\minagri\\workspace\\workspaceEnaMap\\ena_demo\\googglemap\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_background.png"
     },
     {
+        "merged": "D:\\proyectos\\minagri\\workspace\\workspaceEnaMap\\ena_demo\\googglemap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_edittext_border_color.xml.flat",
+        "source": "D:\\proyectos\\minagri\\workspace\\workspaceEnaMap\\ena_demo\\googglemap\\app\\src\\main\\res\\drawable\\edittext_border_color.xml"
+    },
+    {
         "merged": "D:\\proyectos\\minagri\\workspace\\workspaceEnaMap\\ena_demo\\googglemap\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
         "source": "D:\\proyectos\\minagri\\workspace\\workspaceEnaMap\\ena_demo\\googglemap\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
@@ -48,12 +52,12 @@
         "source": "D:\\proyectos\\minagri\\workspace\\workspaceEnaMap\\ena_demo\\googglemap\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_format_shapes_black_24dp.png"
     },
     {
-        "merged": "D:\\proyectos\\minagri\\workspace\\workspaceEnaMap\\ena_demo\\googglemap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_format_shapes_black_24dp.png.flat",
-        "source": "D:\\proyectos\\minagri\\workspace\\workspaceEnaMap\\ena_demo\\googglemap\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_format_shapes_black_24dp.png"
-    },
-    {
         "merged": "D:\\proyectos\\minagri\\workspace\\workspaceEnaMap\\ena_demo\\googglemap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_border.xml.flat",
         "source": "D:\\proyectos\\minagri\\workspace\\workspaceEnaMap\\ena_demo\\googglemap\\app\\src\\main\\res\\drawable\\border.xml"
+    },
+    {
+        "merged": "D:\\proyectos\\minagri\\workspace\\workspaceEnaMap\\ena_demo\\googglemap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_format_shapes_black_24dp.png.flat",
+        "source": "D:\\proyectos\\minagri\\workspace\\workspaceEnaMap\\ena_demo\\googglemap\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_format_shapes_black_24dp.png"
     },
     {
         "merged": "D:\\proyectos\\minagri\\workspace\\workspaceEnaMap\\ena_demo\\googglemap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_format_shapes_black_24dp.png.flat",
